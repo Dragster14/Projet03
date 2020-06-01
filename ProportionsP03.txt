@@ -1,0 +1,55 @@
+Proportions:
+
+Page ->
+1500px de large
+
+Entête ->
+245px de haut
+100% de large
+
+Titre ->
+90px de haut
+460px de large
+
+Entre entête et menus ->
+100px de haut
+
+Footer ->
+135px de haut
+100% de large
+
+Mentions ->
+50px de haut
+385px de large
+
+Contact ->
+40px de haut
+370px de large
+
+Entre prochainement et footer ->
+85px de haut
+
+Encadré prochainement ->
+120px de haut
+655px de large
+
+Prochainement ->
+50px de haut
+450px de large
+
+Entre menus et prochainement ->
+95px de haut
+
+Menus ->
+760px de haut
+540px de large
+
+Bord gauche jusqu'au menu ->
+160px de large
+
+Entre menus ->
+100px de haut
+100px de large
+
+Bord droit jusqu'au menu ->
+160px de large
