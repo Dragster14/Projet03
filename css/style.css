@@ -65,12 +65,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-wrap: anywhere;
 }
 
 /* ---- titre h1 ---- */
 header h1 {
     color: #FDCB46;
-    font-size: 5em;
+    font-size: 3.5em;
 }
 
 /* ------------------------- */
@@ -86,12 +87,13 @@ section {
 
 /* ---- taille + ombre des menus ---- */
 .section__menu1, .section__menu2, .section__menu3, .section__menu4 {
-    width: 36%;
-    height: 760px;
+    width: 66%;
+    height: 450px;
     box-shadow: 0px 0px 10px rgba(21,21,21,0.4);
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 /* ---- fond menu 1 ---- */
@@ -118,12 +120,10 @@ section {
     background-color: #FDFFFD;
 }
 
-
-
 /* ---- mise en forme du cadre du prochainement ---- */
 .section__prochainement {
     border: 1px #579C87 solid;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #579C87;
     margin-bottom: 235px;
     width: 43%;
@@ -136,7 +136,7 @@ section {
 /* ---- mise en page du prochainement ---- */
 .section__prochainement p {
     color: #FDCB46;
-    font-size: 2em;
+    font-size: 1em;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -162,11 +162,11 @@ footer {
 /* ---- couleur + taille des liens du footer ---- */
 .footer__mentions, .footer__contact {
     color: #FDCB46;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 /* ---- marge lien contactez-nous ---- */
 .footer__contact {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
