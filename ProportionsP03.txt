@@ -1,4 +1,4 @@
-Proportions:
+PROPORTIONS MAIN PAGE :
 
 Page ->
 1500px de large
@@ -21,10 +21,12 @@ Footer ->
 Mentions ->
 50px de haut
 385px de large
+margin-left: 40px
 
 Contact ->
 40px de haut
 370px de large
+margin-right: 40px
 
 Entre prochainement et footer ->
 85px de haut
@@ -53,3 +55,47 @@ Entre menus ->
 
 Bord droit jusqu'au menu ->
 160px de large
+
+
+PROPORTIONS CARTES :
+
+Menu ->
+1180px de large
+
+Entre footer et menu ->
+140px de haut
+
+Titre restaurant ->
+460px de haut
+530px de large
+
+Entre titre et entête ->
+100px de haut
+
+Entre titre et menu ->
+50px de haut
+
+Entre bord gauche/droite carte et plats ->
+130px de large
+
+Entre titre et entrées ->
+90px de haut
+
+Entre entrées et plats ->
+125px de haut
+
+Entre desserts et titre bas ->
+100px de haut
+
+Entre titre bas et bas carte ->
+100px de haut
+
+Bloc entrées/plats/desserts ->
+930px de large
+
+HR ->
+10px de haut
+285px de large
+
+Entre HR ->
+355px de large
