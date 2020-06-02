@@ -50,7 +50,7 @@ a {
 
 /* ---- marges entres les menus ---- */
 .section__menu1, .section__menu2, .section__menu3, .section__menu4, .section__prochainement {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 /* ------------------------- */
@@ -61,7 +61,7 @@ a {
 header {
     background-color: #579C87;
     width: 100%;
-    height: 245px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +125,7 @@ section {
     border: 1px #579C87 solid;
     border-radius: 10px;
     background-color: #579C87;
-    margin-bottom: 235px;
+    margin-bottom: 95px;
     width: 43%;
     display: flex;
     justify-content: center;
@@ -152,7 +152,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 135px;
+    height: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -167,6 +167,12 @@ footer {
 
 /* ---- marge lien contactez-nous ---- */
 .footer__contact {
-    margin-top: 30px;
+    margin-top: 5px;
+}
+
+.section__menu1--bg {
+    background-color: red;
+    width: 100%;
+    height: 100%;
 }
 
