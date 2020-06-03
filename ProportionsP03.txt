@@ -4,22 +4,22 @@ Page ->
 1500px de large
 
 Entête ->
-245px de haut
+245px de haut -> 80px
 100% de large
 
 Titre ->
-90px de haut
+90px de haut -> 30px
 460px de large
 
 Entre entête et menus ->
-100px de haut
+100px de haut -> 32px
 
 Footer ->
-135px de haut
+135px de haut -> 45px
 100% de large
 
 Mentions ->
-50px de haut
+50px de haut -> 20px
 385px de large
 margin-left: 40px
 
@@ -29,32 +29,32 @@ Contact ->
 margin-right: 40px
 
 Entre prochainement et footer ->
-85px de haut
+85px de haut -> 30px
 
 Encadré prochainement ->
-120px de haut
-655px de large
+120px de haut -> 38px
+655px de large -> 210px (43%)
 
 Prochainement ->
-50px de haut
+50px de haut -> 16px
 450px de large
 
 Entre menus et prochainement ->
-95px de haut
+95px de haut -> 30px
 
 Menus ->
-760px de haut
-540px de large
+760px de haut -> 191px
+540px de large -> 377px (79%)
 
 Bord gauche jusqu'au menu ->
-160px de large
+160px de large -> 51px
 
 Entre menus ->
-100px de haut
-100px de large
+100px de haut -> 32px
+100px de large -> 32px
 
 Bord droit jusqu'au menu ->
-160px de large
+160px de large -> 51px
 
 
 PROPORTIONS CARTES :
