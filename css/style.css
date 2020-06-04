@@ -22,7 +22,10 @@ menu1 ->    #FCDFDB -rgb(252, 223, 219)-
 /* ------------------------- */
 
 /*
-
+Menu1 ->    'Devonshire' (p) // 'SegoePrint' (h2)
+Menu2 ->    'Mimix' (p) // 'CasusPro' (h2)
+Menu3 ->    'Rusulica' (p) // 'SegoeScript' (h2)
+Menu4 ->    'Kaushan Script' (p) // 'SegoeScript' (h2)
 */
 
 
@@ -44,6 +47,32 @@ body {
 /* ---- décoration des liens ---- */
 a {
     text-decoration: none;
+}
+
+/* ---- polices ---- */
+@font-face {
+    font-family: 'SegoePrint';
+    src: url("fonts/SegoePrint.ttf") format('TrueType');
+}
+
+@font-face {
+    font-family: 'Mimix';
+    src: url("fonts/Mimix.ttf") format('TrueType');
+}
+
+@font-face {
+    font-family: 'CasusPro';
+    src: url("fonts/CasusPro.ttf") format('TrueType');
+}
+
+@font-face {
+    font-family: 'Rusulica';
+    src: url("fonts/Rusulica.ttf") format('TrueType');
+}
+
+@font-face {
+    font-family: 'SegoeScript';
+    src: url("fonts/SegoeScript.ttf") format('TrueType');
 }
 
 
@@ -134,12 +163,48 @@ header h1 {
 /* ---- taille des noms des menus ---- */
 .article__menu1--texte p, .article__menu2--texte p, .article__menu3--texte p, .article__menu4--texte p {
     font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-/* ---- taille + marges top des titres h2 ---- */
+/* ---- taille + marges des titres h2 ---- */
 .article__menu1--texte h2, .article__menu2--texte h2, .article__menu3--texte h2, .article__menu4--texte h2 {
-    margin-top: 0;
     font-size: 1.6em;
+}
+
+/* ---- police texte du menu1 ---- */
+.article__menu1--texte p {
+    font-family: 'Devonshire', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- police titre h2 du menu1 ---- */
+.article__menu1--texte h2 {
+    font-family: 'SegoePrint', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- police texte du menu2 ---- */
+.article__menu2--texte p {
+    font-family: 'Mimix', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- police titre h2 du menu2 ---- */
+.article__menu2--texte h2 {
+    font-family: 'CasusPro', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- police texte du menu3 ---- */
+.article__menu3--texte p {
+    font-family: 'Rusulica', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- police titre h2 du menu3 et menu4 ---- */
+.article__menu3--texte h2, .article__menu4--texte h2 {
+    font-family: 'SegoeScript', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- police texte du menu4 ---- */
+.article__menu4--texte p {
+    font-family: 'Kaushan Script', 'Trebuchet MS', 'sans-serif';
 }
 
 /* ---- fond + taille + marges + alignement du cadre prochainement ---- */
