@@ -156,11 +156,82 @@ header h1 {
 
 /* ---- mise en page du prochainement ---- */
 .div__prochainement p {
-    color: #FDCB46;
     font-size: 1em;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+/* ---- couleur du texte prochainement + points suspension ---- */
+.div__prochainement p, .div__prochainement--point1, .div__prochainement--point2, .div__prochainement--point3 {
+    color: #FDCB46;
+}
+
+/* ---- taille + marges + animation des points de suspension ---- */
+.div__prochainement--point1, .div__prochainement--point2, .div__prochainement--point3 {
+    font-size: 1.2em;
+    margin-left: 4px;
+    margin-bottom: 3px;
+    opacity: 0;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+/* ---- animation point1 ---- */
+.div__prochainement--point1 {
+    animation-name: point1;
+  }
+  
+@keyframes point1 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* ---- animation point2 ---- */
+.div__prochainement--point2 {
+    animation-name: point2;
+  }
+  
+@keyframes point2 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 0;
+    }
+    31% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* ---- animation point3 ---- */
+.div__prochainement--point3 {
+    animation-name: point3;
+  }
+  
+@keyframes point3 {
+    0% {
+      opacity: 0;
+    }
+    60% {
+      opacity: 0;
+    }
+    61% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 
 
