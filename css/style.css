@@ -14,7 +14,10 @@
 vert ->     #579C87 -rgb(87, 156, 135)-
 jaune ->    #FDCB46 -rgb(253, 203, 70)-
 blanc ->    #FFFFFF -rgb(255, 255, 255)-
-menu1 ->    #FCDFDB -rgb(252, 223, 219)-
+menu1 ->    #FCDFDB -rgb(252, 223, 219)- (fond) // #3d1319 (police)
+menu2 ->    #c77412 (orange) // #935cf4 (lilas)
+menu3 ->    #0887fb (bleu clair) // #1f3bde (bleu foncé)
+menu4 ->    #3e923a (vert foncé) // #72bf56 (vert moyen) // #beff7f (vert clair)
 */
 
 /* ------------------------- */
@@ -134,6 +137,8 @@ header h1 {
     background-color: #FCDFDB;
 }
 
+
+
 /* ---- animation des menus ---- */
 .article__menu1--texte, .article__menu2--texte, .article__menu3--texte, .article__menu4--texte {
     width: 100%;
@@ -172,6 +177,11 @@ header h1 {
     font-size: 1.6em;
 }
 
+/* ---- couleur texte et titre menu1 ---- */
+.article__menu1--texte p, .article__menu1--texte h2 {
+    color: #3d1319;
+}
+
 /* ---- police texte du menu1 ---- */
 .article__menu1--texte p {
     font-family: 'Devonshire', 'Trebuchet MS', 'sans-serif';
@@ -190,11 +200,22 @@ header h1 {
 /* ---- police titre h2 du menu2 ---- */
 .article__menu2--texte h2 {
     font-family: 'CasusPro', 'Trebuchet MS', 'sans-serif';
+    color: #c77412;
 }
 
 /* ---- police texte du menu3 ---- */
 .article__menu3--texte p {
     font-family: 'Rusulica', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- couleur titre du menu3 ---- */
+.article__menu3--texte h2 {
+    color: #0887fb;
+}
+
+/* ---- couleur titre du menu4 ---- */
+.article__menu4--texte h2 {
+    color: #72bf56;
 }
 
 /* ---- police titre h2 du menu3 et menu4 ---- */
