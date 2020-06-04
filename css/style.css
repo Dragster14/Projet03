@@ -74,11 +74,11 @@ header h1 {
 
 
 /* ------------------------- */
-/*          SECTION          */
+/*          ARTICLES         */
 /* ------------------------- */
 
-/* ---- alignement contenu section ---- */
-section {
+/* ---- alignement articles dans container ---- */
+.container__article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,27 +88,37 @@ section {
 .article__menu1, .article__menu2, .article__menu3, .article__menu4 {
     width: 100%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 /* ---- alignement des menus ---- */
 .article__menu1 a, .article__menu2 a, .article__menu3 a, .article__menu4 a {
-    display: flex;
-    justify-content: center;
+    width: 80%;
+    height: 597px;
+    box-shadow: 0px 0px 10px rgba(21,21,21,0.4);
+    overflow: hidden;
 }
 
-/* ---- taille + ombre des menus ---- */
+/* ---- fond du menu 1 ---- */
+.article__menu1 a {
+    background-color: #FCDFDB;
+}
+
+/* ---- animation des menus ---- */
 .article__menu1--texte, .article__menu2--texte, .article__menu3--texte, .article__menu4--texte {
-    box-shadow: 0px 0px 10px rgba(21,21,21,0.4);
-    width: 80%;
+    width: 100%;
     height: 597px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 1s;
 }
 
-/* ---- fond du menu 1 ---- */
-.article__menu1--texte {
-    background-color: #FCDFDB;
+.article__menu1--texte:hover, .article__menu2--texte:hover, .article__menu3--texte:hover, .article__menu4--texte:hover {
+    transform: scale(1.10);
 }
 
 /* ---- marges entres les menus ---- */
@@ -176,4 +186,30 @@ footer {
 .footer__mentions, .footer__contact {
     color: #FDCB46;
     font-size: 1em;
+}
+
+/* ---- effets sur mentions + contact ---- */
+.footer__mentions:hover, .footer__contact:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; 
+    transform: translate3d(0, 0, 0); 
+    backface-visibility: hidden; 
+    perspective: 1000px; 
+}
+
+@keyframes shake { 
+    10%, 90% { 
+    transform: translate3d(-1px, 0, 0); 
+    } 
+  
+    20%, 80% { 
+    transform: translate3d(2px, 0, 0); 
+    } 
+  
+    30%, 50%, 70% { 
+    transform: translate3d(-4px, 0, 0); 
+    } 
+  
+    40%, 60% { 
+    transform: translate3d(4px, 0, 0); 
+    } 
 }
