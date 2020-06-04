@@ -1,7 +1,7 @@
 PROPORTIONS MAIN PAGE :
 
 Page ->
-1500px de large
+1500px de large -> 480px
 
 Entête ->
 245px de haut -> 80px

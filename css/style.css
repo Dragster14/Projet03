@@ -15,9 +15,6 @@ vert ->     #579C87 -rgb(87, 156, 135)-
 jaune ->    #FDCB46 -rgb(253, 203, 70)-
 blanc ->    #FFFFFF -rgb(255, 255, 255)-
 menu1 ->    #FCDFDB -rgb(252, 223, 219)-
-menu2 ->    #FEF5FF -rgb(254, 245, 255)-
-menu3 ->    #F9F9F9 -rgb(249, 249, 249)-
-menu4 ->    #FDFFFD -rgb(253, 255, 253)-
 */
 
 /* ------------------------- */
@@ -37,6 +34,7 @@ menu4 ->    #FDFFFD -rgb(253, 255, 253)-
 body {
     margin: 0;
 }
+
 /* ---- marges max de la page ---- */
 .body__bg {
     max-width: 1500px;
@@ -48,10 +46,7 @@ a {
     text-decoration: none;
 }
 
-/* ---- marges entres les menus ---- */
-.section__menu1, .section__menu2, .section__menu3, .section__menu4, .section__prochainement {
-    margin-top: 50px;
-}
+
 
 /* ------------------------- */
 /*          HEADER           */
@@ -71,61 +66,77 @@ header {
 /* ---- titre h1 ---- */
 header h1 {
     color: #FDCB46;
-    font-size: 3.5em;
+    font-size: 2.4em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+
 
 /* ------------------------- */
 /*          SECTION          */
 /* ------------------------- */
 
-/* ---- éléments de la section au centre ---- */
+/* ---- alignement contenu section ---- */
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* ---- taille + ombre des menus ---- */
-.section__menu1, .section__menu2, .section__menu3, .section__menu4 {
-    width: 66%;
-    height: 450px;
-    box-shadow: 0px 0px 10px rgba(21,21,21,0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ---- taille des menus ---- */
+.article__menu1, .article__menu2, .article__menu3, .article__menu4 {
+    width: 100%;
     text-align: center;
 }
 
-/* ---- fond menu 1 ---- */
-.section__menu1 {
-    border: 1px #FCDFDB solid;
+/* ---- alignement des menus ---- */
+.article__menu1 a, .article__menu2 a, .article__menu3 a, .article__menu4 a {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---- taille + ombre des menus ---- */
+.article__menu1--texte, .article__menu2--texte, .article__menu3--texte, .article__menu4--texte {
+    box-shadow: 0px 0px 10px rgba(21,21,21,0.4);
+    width: 80%;
+    height: 597px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ---- fond du menu 1 ---- */
+.article__menu1--texte {
     background-color: #FCDFDB;
 }
 
-/* ---- fond menu 2 ---- */
-.section__menu2 {
-    border: 1px #FEF5FF solid;
-    background-color: #FEF5FF;
+/* ---- marges entres les menus ---- */
+.article__menu1, .article__menu2, .article__menu3, .article__menu4, .div__prochainement {
+    margin-top: 32px;
 }
 
-/* ---- fond menu 3 ---- */
-.section__menu3 {
-    border: 1px #F9F9F9 solid;
-    background-color: #F9F9F9;
+/* ---- taille icône musique ---- */
+.fa-music {
+    font-size: 2.8em;
 }
 
-/* ---- fond menu 4 ---- */
-.section__menu4 {
-    border: 1px #FDFFFD solid;
-    background-color: #FDFFFD;
+/* ---- taille des noms des menus ---- */
+.article__menu1--texte p, .article__menu2--texte p, .article__menu3--texte p, .article__menu4--texte p {
+    font-size: 1.4em;
 }
 
-/* ---- mise en forme du cadre du prochainement ---- */
-.section__prochainement {
-    border: 1px #579C87 solid;
+/* ---- taille + marges top des titres h2 ---- */
+.article__menu1--texte h2, .article__menu2--texte h2, .article__menu3--texte h2, .article__menu4--texte h2 {
+    margin-top: 0;
+    font-size: 1.6em;
+}
+
+/* ---- fond + taille + marges + alignement du cadre prochainement ---- */
+.div__prochainement {
     border-radius: 10px;
     background-color: #579C87;
-    margin-bottom: 95px;
+    margin-bottom: 77px;
     width: 43%;
     display: flex;
     justify-content: center;
@@ -134,7 +145,7 @@ section {
 }
 
 /* ---- mise en page du prochainement ---- */
-.section__prochainement p {
+.div__prochainement p {
     color: #FDCB46;
     font-size: 1em;
     margin-top: 10px;
@@ -142,11 +153,12 @@ section {
 }
 
 
+
 /* ------------------------- */
 /*          FOOTER           */
 /* ------------------------- */
 
-/* ---- fond + taille du footer ---- */
+/* ---- fond + taille + alignement du footer ---- */
 footer {
     background-color: #579C87;
     position: fixed;
@@ -164,15 +176,3 @@ footer {
     color: #FDCB46;
     font-size: 1em;
 }
-
-/* ---- marge lien contactez-nous ---- */
-.footer__contact {
-    margin-top: 5px;
-}
-
-.section__menu1--bg {
-    background-color: red;
-    width: 100%;
-    height: 100%;
-}
-
