@@ -164,6 +164,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    max-width: 1500px;
     height: 45px;
     display: flex;
     flex-direction: column;
