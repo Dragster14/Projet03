@@ -1,0 +1,157 @@
+/* ------------------------- */
+/*          SUMMARY          */
+/* ------------------------- */
+
+/*
+
+*/
+
+/* ------------------------- */
+/*          COLORS           */
+/* ------------------------- */
+
+/*
+vert ->             #579C87 -rgb(87, 156, 135)-
+jaune ->            #FDCB46 -rgb(253, 203, 70)-
+blanc ->            #FFFFFF -rgb(255, 255, 255)-
+*/
+
+/* ------------------------- */
+/*          POLICE           */
+/* ------------------------- */
+
+/*
+
+*/
+
+
+
+/* ------------------------- */
+/*         GENERALS          */
+/* ------------------------- */
+
+/* ---- marges du body ---- */
+body {
+    margin: 0;
+}
+
+/* ---- marges max de la page ---- */
+.body__bg {
+    max-width: 1500px;
+    margin: auto;
+}
+
+/* ---- décoration des liens ---- */
+a {
+    text-decoration: none;
+}
+
+
+
+/* ------------------------- */
+/*          HEADER           */
+/* ------------------------- */
+
+/* ---- fond + taille du header ---- */
+header {
+    background-color: #579C87;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: anywhere;
+}
+
+/* ---- titre h1 ---- */
+header h1 {
+    color: #FDCB46;
+    font-size: 2.4em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* ------------------------- */
+/*          ARTICLES         */
+/* ------------------------- */
+
+section {
+    overflow-wrap: anywhere;
+}
+
+section h2 {
+    text-align: center;
+    color: #FDCB46;
+    text-decoration: underline;
+    margin-top: 36px;
+}
+
+.section__texte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 61px;
+}
+
+section p {
+    width: 80%;
+}
+
+.section__texte--firstletter::first-letter {
+    color: #579C87;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+
+
+/* ------------------------- */
+/*          FOOTER           */
+/* ------------------------- */
+
+/* ---- fond + taille + alignement du footer ---- */
+footer {
+    background-color: #579C87;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1500px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---- couleur + taille des liens du footer ---- */
+.footer__contact {
+    color: #FDCB46;
+    font-size: 1em;
+}
+
+/* ---- effets sur contact ---- */
+.footer__contact:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; 
+    transform: translate3d(0, 0, 0); 
+    backface-visibility: hidden; 
+    perspective: 1000px; 
+}
+
+@keyframes shake { 
+    10%, 90% { 
+    transform: translate3d(-1px, 0, 0); 
+    } 
+  
+    20%, 80% { 
+    transform: translate3d(2px, 0, 0); 
+    } 
+  
+    30%, 50%, 70% { 
+    transform: translate3d(-4px, 0, 0); 
+    } 
+  
+    40%, 60% { 
+    transform: translate3d(4px, 0, 0); 
+    } 
+}
