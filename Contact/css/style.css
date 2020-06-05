@@ -3,10 +3,10 @@
 /* ------------------------- */
 
 /*
-L.21  ->    GENERALS
-L.44  ->    HEADER
-L.70  ->    SECTION
-L.105 ->    FOOTER
+L.22  ->     GENERALS
+L.44  ->     HEADER
+L.69  ->     SECTION
+L.100 ->     FOOTER
 */
 
 /* ------------------------- */
@@ -18,6 +18,7 @@ vert  ->    #579C87 -rgb(87, 156, 135)-
 jaune ->    #FDCB46 -rgb(253, 203, 70)-
 blanc ->    #FFFFFF -rgb(255, 255, 255)-
 */
+
 
 
 /* ------------------------- */
@@ -39,7 +40,6 @@ body {
 a {
     text-decoration: none;
 }
-
 
 
 /* ------------------------- */
@@ -70,32 +70,27 @@ header h1 {
 /*          SECTION          */
 /* ------------------------- */
 
-/* ---- alignement + couleur + soulignement du titre h2 ---- */
-section h2 {
+/* ---- alignement du contenu ---- */
+section {
+    overflow-wrap: anywhere;
     text-align: center;
-    color: #FDCB46;
+}
+
+/* ---- marges + soulignement titre h2 ---- */
+section h2 {
     text-decoration: underline;
-    margin-top: 36px;
+    margin-top: 100px;
 }
 
-/* ---- alignement du texte ---- */
-.section__texte {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 61px;
-    text-align: justify;
+/* ---- couleur h2 + span ---- */
+section h2, section span {
+    color: #FDCB46;
 }
 
-/* ---- taille du texte ---- */
+/* ---- couleur + taille du texte ---- */
 section p {
-    width: 80%;
-}
-
-/* ---- enluminure de la première lettre ---- */
-.section__texte--firstletter::first-letter {
     color: #579C87;
-    font-size: 1.6em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -120,13 +115,13 @@ footer {
 }
 
 /* ---- couleur + taille des liens du footer ---- */
-.footer__contact {
+.footer__mentions {
     color: #FDCB46;
     font-size: 1em;
 }
 
-/* ---- effets sur contact ---- */
-.footer__contact:hover {
+/* ---- effets sur mentions ---- */
+.footer__mentions:hover {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; 
     transform: translate3d(0, 0, 0); 
     backface-visibility: hidden; 
