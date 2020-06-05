@@ -11,13 +11,14 @@
 /* ------------------------- */
 
 /*
-vert ->     #579C87 -rgb(87, 156, 135)-
-jaune ->    #FDCB46 -rgb(253, 203, 70)-
-blanc ->    #FFFFFF -rgb(255, 255, 255)-
-menu1 ->    #FCDFDB -rgb(252, 223, 219)- (fond) // #3d1319 (police)
-menu2 ->    #c77412 (orange) // #935cf4 (lilas)
-menu3 ->    #0887fb (bleu clair) // #1f3bde (bleu foncé)
-menu4 ->    #3e923a (vert foncé) // #72bf56 (vert moyen) // #beff7f (vert clair)
+vert ->             #579C87 -rgb(87, 156, 135)-
+jaune ->            #FDCB46 -rgb(253, 203, 70)-
+blanc ->            #FFFFFF -rgb(255, 255, 255)-
+icone musique ->    #ef475f (rosé) // #f6916a (orange pâle)
+menu1 ->            #FCDFDB -rgb(252, 223, 219)- (fond) // #3d1319 (police)
+menu2 ->            #c77412 (orange) // #935cf4 (lilas)
+menu3 ->            #0887fb (bleu clair) // #1f3bde (bleu foncé)
+menu4 ->            #3e923a (vert foncé) // #72bf56 (vert moyen) // #beff7f (vert clair)
 */
 
 /* ------------------------- */
@@ -68,10 +69,10 @@ a {
     src: url("fonts/CasusPro.ttf") format('TrueType');
 }
 
-@font-face {
+/*@font-face {
     font-family: 'Rusulica';
     src: url("fonts/Rusulica.ttf") format('TrueType');
-}
+}*/
 
 @font-face {
     font-family: 'SegoeScript';
@@ -137,8 +138,6 @@ header h1 {
     background-color: #FCDFDB;
 }
 
-
-
 /* ---- animation des menus ---- */
 .article__menu1--texte, .article__menu2--texte, .article__menu3--texte, .article__menu4--texte {
     width: 100%;
@@ -160,9 +159,19 @@ header h1 {
     margin-top: 32px;
 }
 
-/* ---- taille icône musique ---- */
+/* ---- alignement éléméents avec dégradé de couleur ---- */
+.article__menu1--centre, .article__menu2--centre, .article__menu3--centre, .article__menu4--centre {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---- taille + dégradé couleur icône musique ---- */
 .fa-music {
+    width: 45px;
     font-size: 2.8em;
+    background: linear-gradient(to bottom right, #ef475f, #f6916a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* ---- taille des noms des menus ---- */
@@ -192,9 +201,13 @@ header h1 {
     font-family: 'SegoePrint', 'Trebuchet MS', 'sans-serif';
 }
 
-/* ---- police texte du menu2 ---- */
+/* ---- police texte + dégradé couleur du menu2 ---- */
 .article__menu2--texte p {
     font-family: 'Mimix', 'Trebuchet MS', 'sans-serif';
+    background: linear-gradient(to bottom right, #c77412, #935cf4);
+    width: 224px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* ---- police titre h2 du menu2 ---- */
@@ -203,9 +216,13 @@ header h1 {
     color: #c77412;
 }
 
-/* ---- police texte du menu3 ---- */
+/* ---- police texte + dégradé couleur du menu3 ---- */
 .article__menu3--texte p {
-    font-family: 'Rusulica', 'Trebuchet MS', 'sans-serif';
+    font-family: /*'Rusulica'*/, 'Trebuchet MS', 'sans-serif';
+    background: linear-gradient(to bottom right, #1f3bde, #0887fb);
+    width: 194px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* ---- couleur titre du menu3 ---- */
@@ -223,9 +240,13 @@ header h1 {
     font-family: 'SegoeScript', 'Trebuchet MS', 'sans-serif';
 }
 
-/* ---- police texte du menu4 ---- */
+/* ---- police texte + dégradé couleur du menu4 ---- */
 .article__menu4--texte p {
     font-family: 'Kaushan Script', 'Trebuchet MS', 'sans-serif';
+    background: linear-gradient(to bottom right, #3e923a, #72bf56, #beff7f);
+    width: 158px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* ---- fond + taille + marges + alignement du cadre prochainement ---- */
