@@ -89,7 +89,6 @@ a {
 header {
     background-color: #579C87;
     width: 100%;
-    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,8 +99,8 @@ header {
 header h1 {
     color: #FDCB46;
     font-size: 2.4em;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 
@@ -353,7 +352,6 @@ footer {
     bottom: 0;
     width: 100%;
     max-width: 1500px;
-    height: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -364,6 +362,16 @@ footer {
 .footer__mentions, .footer__contact {
     color: #FDCB46;
     font-size: 1em;
+}
+
+/* ---- marge des mentions légales ---- */
+.footer__mentions {
+    margin-top: 4.5px;
+}
+
+/* ---- marge du contact ---- */
+.footer__contact {
+    margin-bottom: 4.5px;
 }
 
 /* ---- effets sur mentions + contact ---- */
