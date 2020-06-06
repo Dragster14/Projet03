@@ -93,7 +93,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-wrap: anywhere;
 }
 
 /* ---- titre h1 ---- */
@@ -258,7 +257,6 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-wrap: anywhere;
 }
 
 /* ---- mise en page du prochainement ---- */
@@ -292,6 +290,9 @@ header h1 {
     0% {
       opacity: 0;
     }
+    10% {
+        opacity: 0;
+    }
     30% {
       opacity: 1;
     }
@@ -312,8 +313,8 @@ header h1 {
     30% {
       opacity: 0;
     }
-    31% {
-      opacity: 1;
+    50% {
+        opacity: 1;
     }
     100% {
       opacity: 1;
@@ -329,10 +330,10 @@ header h1 {
     0% {
       opacity: 0;
     }
-    60% {
+    50% {
       opacity: 0;
     }
-    61% {
+    70% {
       opacity: 1;
     }
     100% {
