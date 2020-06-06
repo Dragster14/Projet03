@@ -291,10 +291,10 @@ header h1 {
     0% {
       opacity: 0;
     }
-    10% {
+    20% {
         opacity: 0;
     }
-    30% {
+    35% {
       opacity: 1;
     }
     100% {
@@ -311,10 +311,10 @@ header h1 {
     0% {
       opacity: 0;
     }
-    30% {
+    35% {
       opacity: 0;
     }
-    50% {
+    55% {
         opacity: 1;
     }
     100% {
@@ -331,10 +331,10 @@ header h1 {
     0% {
       opacity: 0;
     }
-    50% {
+    55% {
       opacity: 0;
     }
-    70% {
+    75% {
       opacity: 1;
     }
     100% {
