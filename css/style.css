@@ -46,6 +46,7 @@ body {
 .body__bg {
     max-width: 1500px;
     margin: auto;
+    overflow-wrap: anywhere;
 }
 
 /* ---- décoration des liens ---- */
