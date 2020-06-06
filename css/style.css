@@ -257,6 +257,7 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* ---- mise en page du prochainement ---- */
@@ -321,7 +322,7 @@ header h1 {
     }
   }
 
-/* ---- animation point3 ---- */
+/* ---- animation point3 + marge ---- */
 .div__prochainement--point3 {
     animation-name: point3;
   }
