@@ -91,7 +91,7 @@ Entre titre bas et bas carte ->
 100px de haut
 
 Bloc entrées/plats/desserts ->
-930px de large
+930px de large -> 297px
 
 HR ->
 10px de haut

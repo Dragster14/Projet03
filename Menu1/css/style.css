@@ -1,0 +1,254 @@
+/* ------------------------- */
+/*          SUMMARY          */
+/* ------------------------- */
+
+/*
+
+*/
+
+/* ------------------------- */
+/*          COLORS           */
+/* ------------------------- */
+
+/*
+vert ->             #579C87 -rgb(87, 156, 135)-
+jaune ->            #FDCB46 -rgb(253, 203, 70)-
+blanc ->            #FFFFFF -rgb(255, 255, 255)-
+icone musique ->    #ef475f (rosé) // #f6916a (orange pâle)
+menu1 ->            #FCDFDB -rgb(252, 223, 219)- (fond) // #3d1319 (police)
+*/
+
+/* ------------------------- */
+/*          POLICE           */
+/* ------------------------- */
+
+/*
+Menu1 ->    'Devonshire' (p) // 'SegoePrint' (h2)
+*/
+
+
+/* ------------------------- */
+/*         GENERALS          */
+/* ------------------------- */
+
+/* ---- marges du body ---- */
+body {
+    margin: 0;
+}
+
+/* ---- marges max de la page ---- */
+.body__bg {
+    max-width: 1500px;
+    margin: auto;
+    overflow-wrap: anywhere;
+}
+
+/* ---- décoration des liens ---- */
+a {
+    text-decoration: none;
+}
+
+/* ---- décoration des lites ---- */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* ---- polices ---- */
+@font-face {
+    font-family: 'SegoePrint';
+    src: url("fonts/SegoePrint.ttf") format('TrueType');
+}
+
+
+/* ------------------------- */
+/*          HEADER           */
+/* ------------------------- */
+
+/* ---- fond + taille du header ---- */
+header {
+    background-color: #579C87;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---- titre h1 ---- */
+header h1 {
+    color: #FDCB46;
+    font-size: 2.4em;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+/* ------------------------- */
+/*          SECTION          */
+/* ------------------------- */
+
+/* ---- alignement du contenu ---- */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+/* ---- taille du titre h2 ---- */
+section h2 {
+    font-size: 1.4em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* ---- taille + couleur de fond de la carte ---- */
+.section__bg {
+    width: 80%;
+    background-color: #FCDFDB;
+}
+
+/* ---- alignement logo haut de page + titre h4 ---- */
+.logo__hautdepage, h4 {
+    text-align: center;
+}
+
+/* ---- coupure logo sur petits écrans ---- */
+.logo__hautdepage, .logo__basdepage {
+    overflow: auto;
+}
+
+/* ---- marge + taille titre h3 haut de page ---- */
+.logo__hautdepage h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+/* ---- police titre h3 ---- */
+.logo__hautdepage h3, .logo__basdepage h3 {
+    font-family: 'Devonshire', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- couleur titre h3, h4 + texte des listes ---- */
+.logo__hautdepage h3, h4, .article__entrées--plats li, .article__entrées--prix li, .article__plats--plats li, .article__plats--prix li, .article__desserts--plats li, .logo__basdepage h3 {
+    color: #3d1319;
+}
+
+/* ---- marge + dégradé couleur icône musique ---- */
+.fa-music {
+    background: linear-gradient(to bottom right, #ef475f, #f6916a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 50px;
+}
+
+/* ---- taille logo haut de page + fond de couleur ---- */
+.logo__hautdepage i {
+    font-size: 2.9em;
+    width: 60px;
+}
+
+/* ---- taille logo bas de page + fond de couleur ---- */
+.logo__basdepage i {
+    font-size: 2em;
+    width: 40px;
+}
+
+/* ---- disposition des listes ---- */
+.article__entrées--disposition, .article__plats--disposition {
+    display: flex;
+}
+
+/* ---- taille + alignement des listes ---- */
+.article__entrées--disposition, .article__plats--disposition, .article__desserts--plats {
+    width: 80%;
+    margin: auto;
+}
+
+/* ---- taille + style italique du texte des listes ---- */
+.article__entrées--plats li, .article__entrées--prix li, .article__plats--plats li, .article__plats--prix li, .article__desserts--plats li {
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+/* ---- marge de la liste des prix ---- */
+.article__entrées--prix, .article__plats--prix {
+    margin-left: 12px;
+}
+
+/* ---- position + marges logo restaurant bas de page ---- */
+.logo__basdepage {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+/* ---- taille + couleur logo restaurant bas de page ---- */
+.logo__basdepage h3 {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 1.4em;
+}
+
+
+
+/* ------------------------- */
+/*          FOOTER           */
+/* ------------------------- */
+
+/* ---- fond + taille + alignement du footer ---- */
+footer {
+    background-color: #579C87;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---- couleur + taille des liens du footer ---- */
+.footer__mentions, .footer__contact {
+    color: #FDCB46;
+    font-size: 1em;
+}
+
+/* ---- marge des mentions légales ---- */
+.footer__mentions {
+    margin-top: 4.5px;
+}
+
+/* ---- marge du contact ---- */
+.footer__contact {
+    margin-bottom: 4.5px;
+}
+
+/* ---- effets sur mentions + contact ---- */
+.footer__mentions:hover, .footer__contact:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; 
+    transform: translate3d(0, 0, 0); 
+    backface-visibility: hidden; 
+    perspective: 1000px; 
+}
+
+@keyframes shake { 
+    10%, 90% { 
+    transform: translate3d(-1px, 0, 0); 
+    } 
+  
+    20%, 80% { 
+    transform: translate3d(2px, 0, 0); 
+    } 
+  
+    30%, 50%, 70% { 
+    transform: translate3d(-4px, 0, 0); 
+    } 
+  
+    40%, 60% { 
+    transform: translate3d(4px, 0, 0); 
+    } 
+}
