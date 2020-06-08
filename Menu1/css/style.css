@@ -51,12 +51,6 @@ a {
     text-decoration: none;
 }
 
-/* ---- décoration des lites ---- */
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
 /* ---- polices ---- */
 @font-face {
     font-family: 'SegoePrint';
@@ -138,25 +132,21 @@ section h2 {
     float: right;
 }
 
-/* ---- taille + alignement des listes et séparateurs ---- */
-.img__entrées, .img__plats, .img__desserts, .article__entrées--disposition, .article__plats--disposition, .article__desserts--plats {
+/* ---- taille + alignement du texte et séparateurs ---- */
+.img__entrées, .img__plats, .img__desserts, .article__entrées--disposition, .article__plats--disposition, .article__desserts {
     width: 80%;
     margin: auto;
 }
 
-/* ---- marge séparateur des entrées, plats et desserts ---- */
+/* ---- retrait float ---- */
+.article__entrées, .article__plats, .article__desserts {
+    clear: both;
+}
+
+/* ---- marge séparateur ---- */
 .img__entrées, .img__plats, .img__desserts {
     margin-top: 21px;
-}
-
-/* ---- marge séparateur des entrées et plats ---- */
-.img__entrées, .img__plats {
     margin-bottom: 21px;
-}
-
-/* ---- marges séparateur des desserts ---- */
-.img__desserts {
-    margin-bottom: 37px;
 }
 
 /* ---- marge + taille titre h3 haut de page ---- */
@@ -170,9 +160,44 @@ section h2 {
     font-family: 'Devonshire', 'Trebuchet MS', 'sans-serif';
 }
 
-/* ---- couleur titre h3, h4 + texte des listes ---- */
-.logo__hautdepage h3, h4, .article__entrées--plats li, .article__entrées--prix li, .article__plats--plats li, .article__plats--prix li, .article__desserts--plats li, .logo__basdepage h3 {
+/* ---- couleur h3 + h4 + texte ---- */
+h3, h4, p {
     color: #3d1319;
+}
+
+/* ---- style italique du texte ---- */
+p {
+    font-style: italic;
+}
+
+/* ---- taille des blocs et du texte ---- */
+.article__taille {
+    width: 79%;
+}
+
+/* ---- taille du texte ---- */
+.article__taille, .article__desserts p {
+    font-size: 0.6em;
+}
+
+/* ---- style gras + taille + alignement des prix ---- */
+.article__prix {
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ---- alignement texte et prix ---- */
+.article__entrées, .article__plats {
+    display: flex;
+}
+
+/* ---- marge texte desserts ---- */
+.article__desserts p {
+    margin-bottom: 31px;
 }
 
 /* ---- marge + dégradé couleur icône musique ---- */
@@ -189,7 +214,7 @@ section h2 {
     width: 60px;
 }
 
-/* ---- taille logo bas de page + fond de couleur ---- */
+/* ---- taille logo bas de page ---- */
 .logo__basdepage i {
     font-size: 2em;
     width: 40px;
@@ -225,35 +250,6 @@ h4::after {
 
 h4:hover::after {
   width: 100%;
-}
-
-/* ---- disposition des listes ---- */
-.article__entrées--disposition, .article__plats--disposition {
-    display: flex;
-}
-
-/* ---- taille + style italique du texte des listes des plats ---- */
-.article__entrées--plats li, .article__plats--plats li, .article__desserts--plats li {
-    font-size: 0.6em;
-}
-
-/* ---- taille du texte des listes des prix ---- */
-.article__entrées--prix li, .article__plats--prix li {
-    font-size: 0.7em;
-}
-
-/* ---- style italique du texte des listes plats/prix ---- */
-.article__entrées--plats li, .article__entrées--prix li, .article__plats--plats li, .article__plats--prix li, .article__desserts--plats li {
-    font-style: italic;
-}
-
-/* ---- taille + alignement + style gras de la liste des prix ---- */
-.article__entrées--prix, .article__plats--prix {
-    width: 75px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-weight: bold;
 }
 
 /* ---- position + marges logo restaurant bas de page ---- */
