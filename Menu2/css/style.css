@@ -6,7 +6,7 @@
 L.33  ->    GENERALS
 L.61  ->    HEADER
 L.82  ->    SECTION
-L.251 ->    FOOTER
+L.255 ->    FOOTER
 */
 
 /* ------------------------- */
@@ -86,7 +86,6 @@ header h1 {
 section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 80%;
     margin: auto;
 }
@@ -102,6 +101,12 @@ section h2 {
 /* ---- alignement logo haut de page + titre h4 ---- */
 .logo__hautdepage, h4 {
     text-align: center;
+}
+
+/* ---- alignement logo haut de page ---- */
+.logo__hautdepage {
+    display: flex;
+    justify-content: center;
 }
 
 /* ---- taille + marge des séparateurs gauche et droite ---- */
@@ -193,9 +198,8 @@ h4 {
     margin-bottom: 31px;
 }
 
-/* ---- style gras + taille + alignement des prix ---- */
+/* ---- taille + alignement des prix ---- */
 .article__prix {
-    font-weight: bold;
     font-size: 0.8em;
     width: 20%;
     display: flex;
