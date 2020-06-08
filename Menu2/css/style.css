@@ -3,10 +3,10 @@
 /* ------------------------- */
 
 /*
-L.  ->    GENERALS
-L.  ->    HEADER
-L.  ->    SECTION
-L. ->    FOOTER
+L.33  ->    GENERALS
+L.61  ->    HEADER
+L.82  ->    SECTION
+L.251 ->    FOOTER
 */
 
 /* ------------------------- */
@@ -14,10 +14,10 @@ L. ->    FOOTER
 /* ------------------------- */
 
 /*
-vert ->             #579C87 -rgb(87, 156, 135)-
+vert  ->            #579C87 -rgb(87, 156, 135)-
 jaune ->            #FDCB46 -rgb(253, 203, 70)-
 blanc ->            #FFFFFF -rgb(255, 255, 255)-
-
+menu2 ->            #c67412 (orange) // #a56799 (lilas) // #6e4ccc (violet)
 */
 
 /* ------------------------- */
@@ -25,7 +25,7 @@ blanc ->            #FFFFFF -rgb(255, 255, 255)-
 /* ------------------------- */
 
 /*
-
+font-family: 'Mimix'
 */
 
 
@@ -52,13 +52,8 @@ a {
 
 /* ---- polices ---- */
 @font-face {
-    font-family: 'SegoePrint';
-    src: url("fonts/SegoePrint.ttf") format('TrueType');
-}
-
-@font-face {
-    font-family: 'Nimbus';
-    src: url("fonts/Nimbus.ttf") format('TrueType');
+    font-family: 'Mimix';
+    src: url("fonts/Mimix.ttf") format('TrueType');
 }
 
 
@@ -92,7 +87,8 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 90px;
+    width: 80%;
+    margin: auto;
 }
 
 /* ---- taille + police titre h2 ---- */
@@ -101,11 +97,6 @@ section h2 {
     margin-top: 40px;
     margin-bottom: 20px;
     font-family: 'Nimbus', 'Trebuchet MS', 'sans-serif';
-}
-
-/* ---- taille + couleur de fond de la carte ---- */
-.section__bg {
-    width: 80%;
 }
 
 /* ---- alignement logo haut de page + titre h4 ---- */
@@ -132,7 +123,7 @@ section h2 {
 }
 
 /* ---- taille + alignement du texte et séparateurs ---- */
-.img__entrees, .img__plats, .img__desserts, .article__entrees--disposition, .article__plats--disposition, .article__desserts {
+.article__entrees--disposition, .article__plats--disposition, .article__desserts {
     width: 80%;
     margin: auto;
 }
@@ -140,6 +131,11 @@ section h2 {
 /* ---- retrait float ---- */
 .article__entrees, .article__plats, .article__desserts {
     clear: both;
+}
+
+/* ---- marge texte des desserts ---- */
+.article__desserts {
+    margin-bottom: 90px;
 }
 
 /* ---- marge séparateur ---- */
@@ -150,15 +146,15 @@ section h2 {
 
 /* ---- marge + taille titre h3 haut de page ---- */
 .logo__hautdepage h3 {
-    margin-top: 0;
     font-size: 1.8em;
+    font-family: 'Mimix', 'Trebuchet MS', 'sans-serif';
+    background: linear-gradient(to bottom right, #c67412, #a56799,  #6e4ccc);
+    width: 290px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
-
-/* ---- police titre h3 ---- */
-
-
-/* ---- police h4 + texte ---- */
-
 
 /* ---- taille titre h4 ---- */
 h4 {
@@ -167,8 +163,20 @@ h4 {
     font-size: 0.9em;
 }
 
-/* ---- couleur h3 + h4 + texte ---- */
+/* ---- couleur texte et h4 entrées ---- */
+.img__entrees h4, .article__entrees p {
+    color: #c67412;
+}
 
+/* ---- couleur texte et h4 plats ---- */
+.img__plats h4, .article__plats p {
+    color: #a56799;
+}
+
+/* ---- couleur texte et h4 plats ---- */
+.img__desserts h4, .article__desserts p {
+    color: #6e4ccc;
+}
 
 /* ---- taille des blocs et du texte ---- */
 .article__taille {
@@ -178,6 +186,11 @@ h4 {
 /* ---- taille du texte ---- */
 .article__taille, .article__desserts p {
     font-size: 0.6em;
+}
+
+/* ---- marge entre les textes du dessert ---- */
+.article__desserts p {
+    margin-bottom: 31px;
 }
 
 /* ---- style gras + taille + alignement des prix ---- */
@@ -195,27 +208,38 @@ h4 {
     display: flex;
 }
 
-/* ---- soulignement des h4 entrées / pats / desserts ---- */
+/* ---- soulignement des h4 entrées / plats / desserts ---- */
 .img__entrees h4 {
-    width: 55px;
+    width: 157px;
 }
 
 .img__plats h4 {
-    width: 95px;
+    width: 115px;
 }
 
 .img__desserts h4 {
-    width: 121px;
+    width: 141px;
 }
 
 h4::after {
     content: "";
     display: block;
     height: 2px;
-    background-color: #3d1319;
     width: 0%;
     transition-property: width;
     transition-duration: 1s;
+}
+
+.img__entrees h4::after {
+    background-color: #c67412;
+}
+
+.img__plats h4::after {
+    background-color: #a56799;
+}
+
+.img__desserts h4::after {
+    background-color: #6e4ccc;
 }
 
 h4:hover::after {
