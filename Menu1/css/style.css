@@ -4,9 +4,9 @@
 
 /*
 L.34  ->    GENERALS
-L.68  ->    HEADER
-L.89  ->    SECTION
-L.279 ->    FOOTER
+L.67  ->    HEADER
+L.88  ->    SECTION
+L.288 ->    FOOTER
 */
 
 /* ------------------------- */
@@ -26,7 +26,7 @@ menu1 ->            #FCDFDB -rgb(252, 223, 219)- (fond) // #3d1319 (police)
 /* ------------------------- */
 
 /*
-Menu1 ->    'Devonshire' (p) // 'SegoePrint' (h2)
+Menu1 ->    'Devonshire' // 'SegoePrint' // 'Nimbus'
 */
 
 
@@ -55,6 +55,11 @@ a {
 @font-face {
     font-family: 'SegoePrint';
     src: url("fonts/SegoePrint.ttf") format('TrueType');
+}
+
+@font-face {
+    font-family: 'Nimbus';
+    src: url("fonts/Nimbus.ttf") format('TrueType');
 }
 
 
@@ -91,11 +96,12 @@ section {
     margin-bottom: 90px;
 }
 
-/* ---- taille du titre h2 ---- */
+/* ---- taille + police titre h2 ---- */
 section h2 {
     font-size: 1.4em;
     margin-top: 40px;
     margin-bottom: 20px;
+    font-family: 'Nimbus', 'Trebuchet MS', 'sans-serif';
 }
 
 /* ---- taille + couleur de fond de la carte ---- */
@@ -158,6 +164,18 @@ section h2 {
 /* ---- police titre h3 ---- */
 .logo__hautdepage h3, .logo__basdepage h3 {
     font-family: 'Devonshire', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- police h4 + texte ---- */
+h4, p {
+    font-family: 'SegoePrint', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- taille titre h4 ---- */
+h4 {
+    max-width: 100%;
+    margin: auto;
+    font-size: 0.9em;
 }
 
 /* ---- couleur h3 + h4 + texte ---- */
@@ -231,11 +249,6 @@ p {
 
 .img__desserts h4 {
     width: 121px;
-}
-
-h4 {
-    max-width: 100%;
-    margin: auto;
 }
 
 h4::after {
