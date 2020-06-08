@@ -6,7 +6,7 @@
 L.33  ->    GENERALS
 L.61  ->    HEADER
 L.82  ->    SECTION
-L.255 ->    FOOTER
+L.218 ->    FOOTER
 */
 
 /* ------------------------- */
@@ -17,7 +17,7 @@ L.255 ->    FOOTER
 vert  ->            #579C87 -rgb(87, 156, 135)-
 jaune ->            #FDCB46 -rgb(253, 203, 70)-
 blanc ->            #FFFFFF -rgb(255, 255, 255)-
-menu2 ->            #c67412 (orange) // #a56799 (lilas) // #6e4ccc (violet)
+menu3 ->            #0228dd (bleu foncé) // #0670f3 (bleu clair) // #229df9 (bleu très clair)
 */
 
 /* ------------------------- */
@@ -25,7 +25,7 @@ menu2 ->            #c67412 (orange) // #a56799 (lilas) // #6e4ccc (violet)
 /* ------------------------- */
 
 /*
-font-family: 'Mimix'
+font-family: 'Mimix';
 */
 
 
@@ -52,8 +52,8 @@ a {
 
 /* ---- polices ---- */
 @font-face {
-    font-family: 'Mimix';
-    src: url("fonts/Mimix.ttf") format('TrueType');
+    font-family: 'SegoePrint';
+    src: url("fonts/SegoePrint.ttf") format('TrueType');
 }
 
 
@@ -106,6 +106,7 @@ section {
     width: 32%;
     max-width: 100%;
     height: auto;
+    margin-top: 9px;
 }
 
 /* ---- positionnement séparateur gauche ---- */
@@ -129,23 +130,22 @@ section {
     clear: both;
 }
 
-/* ---- marge texte des desserts ---- */
-.article__desserts {
-    margin-bottom: 90px;
-}
-
 /* ---- marge séparateur ---- */
 .img__entrees, .img__plats, .img__desserts {
     margin-top: 21px;
     margin-bottom: 21px;
 }
 
+/* ---- marge desserts ---- */
+.article__desserts--marge {
+    margin-bottom: 90px;
+}
+
 /* ---- marge + taille titre h3 haut de page ---- */
 .logo__hautdepage h3 {
     font-size: 1.8em;
-    font-family: 'Mimix', 'Trebuchet MS', 'sans-serif';
-    background: linear-gradient(to bottom right, #c67412, #a56799,  #6e4ccc);
-    width: 290px;
+    background: linear-gradient(to bottom right, #0228dd, #0670f3, #229df9);
+    width: 260px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 35px;
@@ -157,40 +157,23 @@ h4 {
     max-width: 100%;
     margin: auto;
     font-size: 0.9em;
+    font-weight: normal;
 }
 
-/* ---- couleur texte et h4 entrées ---- */
-.img__entrees h4, .article__entrees p {
-    color: #c67412;
+/* ---- police h4 + texte ---- */
+h4, p {
+    font-family: 'SegoePrint', 'Trebuchet MS', 'sans-serif';
 }
 
-/* ---- couleur texte et h4 plats ---- */
-.img__plats h4, .article__plats p {
-    color: #a56799;
-}
-
-/* ---- couleur texte et h4 plats ---- */
-.img__desserts h4, .article__desserts p {
-    color: #6e4ccc;
-}
-
-/* ---- taille des blocs de texte ---- */
+/* ---- taille des blocs et du texte ---- */
 .article__taille {
     width: 79%;
-}
-
-/* ---- taille du texte ---- */
-.article__taille, .article__desserts p {
     font-size: 0.6em;
-}
-
-/* ---- marge entre les textes du dessert ---- */
-.article__desserts p {
-    margin-bottom: 31px;
 }
 
 /* ---- taille + alignement des prix ---- */
 .article__prix {
+    font-weight: bold;
     font-size: 0.8em;
     width: 20%;
     display: flex;
@@ -199,47 +182,36 @@ h4 {
 }
 
 /* ---- alignement texte et prix ---- */
-.article__entrees, .article__plats {
+.article__entrees, .article__plats, .article__desserts {
     display: flex;
 }
 
 /* ---- soulignement des h4 entrées / plats / desserts ---- */
 .img__entrees h4 {
-    width: 157px;
+    width: 161px;
 }
 
 .img__plats h4 {
-    width: 115px;
+    width: 150px;
 }
 
 .img__desserts h4 {
-    width: 141px;
+    width: 163px;
 }
 
 h4::after {
     content: "";
     display: block;
+    background: black;
     height: 2px;
     width: 0%;
     transition-property: width;
     transition-duration: 1s;
 }
 
-.img__entrees h4::after {
-    background-color: #c67412;
-}
-
-.img__plats h4::after {
-    background-color: #a56799;
-}
-
-.img__desserts h4::after {
-    background-color: #6e4ccc;
-}
-
 h4:hover::after {
-  width: 100%;
-}
+    width: 100%;
+  }
 
 
 /* ------------------------- */

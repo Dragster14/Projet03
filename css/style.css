@@ -17,7 +17,7 @@ blanc ->            #FFFFFF -rgb(255, 255, 255)-
 icone musique ->    #ef475f (rosé) // #f6916a (orange pâle)
 menu1 ->            #FCDFDB -rgb(252, 223, 219)- (fond) // #3d1319 (police)
 menu2 ->            #c67412 (orange) // #a56799 (lilas) // #6e4ccc (violet)
-menu3 ->            #0887fb (bleu clair) // #1f3bde (bleu foncé)
+menu3 ->            #0228dd (bleu foncé) // #0670f3 (bleu clair) // #229df9 (bleu très clair)
 menu4 ->            #3e923a (vert foncé) // #72bf56 (vert moyen) // #beff7f (vert clair)
 */
 
@@ -217,9 +217,9 @@ header h1 {
 
 /* ---- police texte + dégradé couleur du menu3 ---- */
 .article__menu3--texte p {
-    font-family: /*'Rusulica'*/, 'Trebuchet MS', 'sans-serif';
-    background: linear-gradient(to bottom right, #1f3bde, #0887fb);
-    width: 194px;
+    font-family: 'Trebuchet MS', 'sans-serif';
+    background: linear-gradient(to bottom right, #0228dd, #0670f3, #229df9);
+    width: 220px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
