@@ -1,0 +1,283 @@
+/* ------------------------- */
+/*          SUMMARY          */
+/* ------------------------- */
+
+/*
+L.  ->    GENERALS
+L.  ->    HEADER
+L.  ->    SECTION
+L. ->    FOOTER
+*/
+
+/* ------------------------- */
+/*          COLORS           */
+/* ------------------------- */
+
+/*
+vert ->             #579C87 -rgb(87, 156, 135)-
+jaune ->            #FDCB46 -rgb(253, 203, 70)-
+blanc ->            #FFFFFF -rgb(255, 255, 255)-
+
+*/
+
+/* ------------------------- */
+/*          POLICE           */
+/* ------------------------- */
+
+/*
+
+*/
+
+
+/* ------------------------- */
+/*         GENERALS          */
+/* ------------------------- */
+
+/* ---- marges du body ---- */
+body {
+    margin: 0;
+}
+
+/* ---- marges max de la page ---- */
+.body__bg {
+    max-width: 1500px;
+    margin: auto;
+    overflow-wrap: anywhere;
+}
+
+/* ---- décoration des liens ---- */
+a {
+    text-decoration: none;
+}
+
+/* ---- polices ---- */
+@font-face {
+    font-family: 'SegoePrint';
+    src: url("fonts/SegoePrint.ttf") format('TrueType');
+}
+
+@font-face {
+    font-family: 'Nimbus';
+    src: url("fonts/Nimbus.ttf") format('TrueType');
+}
+
+
+/* ------------------------- */
+/*          HEADER           */
+/* ------------------------- */
+
+/* ---- fond + taille du header ---- */
+header {
+    background-color: #579C87;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---- titre h1 ---- */
+header h1 {
+    color: #FDCB46;
+    font-size: 2.4em;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+/* ------------------------- */
+/*          SECTION          */
+/* ------------------------- */
+
+/* ---- alignement du contenu ---- */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+/* ---- taille + police titre h2 ---- */
+section h2 {
+    font-size: 1.4em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Nimbus', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- taille + couleur de fond de la carte ---- */
+.section__bg {
+    width: 80%;
+}
+
+/* ---- alignement logo haut de page + titre h4 ---- */
+.logo__hautdepage, h4 {
+    text-align: center;
+}
+
+/* ---- taille + marge des séparateurs gauche et droite ---- */
+.img__entrees img, .img__plats img, .img__desserts img {
+    width: 32%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 4px;
+}
+
+/* ---- positionnement séparateur gauche ---- */
+.img__entrees--gauche, .img__plats--gauche, .img__desserts--gauche {
+    float: left;
+}
+
+/* ---- positionnement séparateur droite ---- */
+.img__entrees--droite, .img__plats--droite, .img__desserts--droite {
+    float: right;
+}
+
+/* ---- taille + alignement du texte et séparateurs ---- */
+.img__entrees, .img__plats, .img__desserts, .article__entrees--disposition, .article__plats--disposition, .article__desserts {
+    width: 80%;
+    margin: auto;
+}
+
+/* ---- retrait float ---- */
+.article__entrees, .article__plats, .article__desserts {
+    clear: both;
+}
+
+/* ---- marge séparateur ---- */
+.img__entrees, .img__plats, .img__desserts {
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+/* ---- marge + taille titre h3 haut de page ---- */
+.logo__hautdepage h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+/* ---- police titre h3 ---- */
+
+
+/* ---- police h4 + texte ---- */
+
+
+/* ---- taille titre h4 ---- */
+h4 {
+    max-width: 100%;
+    margin: auto;
+    font-size: 0.9em;
+}
+
+/* ---- couleur h3 + h4 + texte ---- */
+
+
+/* ---- taille des blocs et du texte ---- */
+.article__taille {
+    width: 79%;
+}
+
+/* ---- taille du texte ---- */
+.article__taille, .article__desserts p {
+    font-size: 0.6em;
+}
+
+/* ---- style gras + taille + alignement des prix ---- */
+.article__prix {
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ---- alignement texte et prix ---- */
+.article__entrees, .article__plats {
+    display: flex;
+}
+
+/* ---- soulignement des h4 entrées / pats / desserts ---- */
+.img__entrees h4 {
+    width: 55px;
+}
+
+.img__plats h4 {
+    width: 95px;
+}
+
+.img__desserts h4 {
+    width: 121px;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #3d1319;
+    width: 0%;
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+h4:hover::after {
+  width: 100%;
+}
+
+
+/* ------------------------- */
+/*          FOOTER           */
+/* ------------------------- */
+
+/* ---- fond + taille + alignement du footer ---- */
+footer {
+    background-color: #579C87;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---- couleur + taille des liens du footer ---- */
+.footer__mentions, .footer__contact {
+    color: #FDCB46;
+    font-size: 1em;
+}
+
+/* ---- marge des mentions légales ---- */
+.footer__mentions {
+    margin-top: 4.5px;
+}
+
+/* ---- marge du contact ---- */
+.footer__contact {
+    margin-bottom: 4.5px;
+}
+
+/* ---- effets sur mentions + contact ---- */
+.footer__mentions:hover, .footer__contact:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; 
+    transform: translate3d(0, 0, 0); 
+    backface-visibility: hidden; 
+    perspective: 1000px; 
+}
+
+@keyframes shake { 
+    10%, 90% { 
+    transform: translate3d(-1px, 0, 0); 
+    } 
+  
+    20%, 80% { 
+    transform: translate3d(2px, 0, 0); 
+    } 
+  
+    30%, 50%, 70% { 
+    transform: translate3d(-4px, 0, 0); 
+    } 
+  
+    40%, 60% { 
+    transform: translate3d(4px, 0, 0); 
+    } 
+}

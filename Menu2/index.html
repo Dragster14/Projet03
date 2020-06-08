@@ -2,6 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Le chic à la française</title>
   </head>
   <body>
@@ -11,67 +13,86 @@
       <header>
         <a href="index.html"><h1>ohmyfood</h1></a>
       </header>
-<!-- nom du restaurant -->
-      <h2>Le chic à la française</h2>
 <!-- section -->
       <section>
-<!-- logo restaurant dans l'entête -->
-        <div class="logo__entête">
-          <h3>Le chic à la française</h3>
-        </div>
+<!-- nom du restaurant -->
+        <h2>Le chic à la française</h2>
+<!-- taille de la carte -->
+        <div class="section__bg">
+<!-- logo restaurant haut de page -->
+          <div class="logo__hautdepage">
+            <h3>Le chic à la française</h3>
+          </div>
 <!-- entrées -->
-        <article class="section__entrées">
-          <hr class="section__entrées--separation">
-          <h4>Pour se mettre en appétit</h4>
-          <hr class="section__entrées--separation">
-<!-- liste des entrées -->
-          <ul class="section__entrées--plats">
-            <li>Tartare de poulpe acidulé aux zests d'orange</li>
-            <li>Velouté de légumes d'antant</li>
-            <li>Soupe à l'oignon revisitée</li>
-          </ul>
-<!-- liste des prix des entrées -->
-          <ul class="section__entrées--prix">
-            <li>79€</li>
-            <li>57€</li>
-            <li>57€</li>
-          </ul>
-        </article>
+          <article>
+            <div class="img__entrees">
+              <img class="img__entrees--gauche" src="css/img/separateur_gauche1.jpg" alt="séparateur_gauche" /> 
+              <img class="img__entrees--droite" src="css/img/separateur_droite1.jpg" alt="séparateur_droite" />
+              <h4>Pour se mettre en appétit</h4>
+            </div>
+<!-- dispotion des entrées -->
+            <div class="article__entrees--disposition">
+<!-- plats + prix des entrées -->
+              <div class="article__entrees">
+                <p class="article__taille">Tartare de poulpe acidulé aux zests d'orange</p>
+                <p class="article__prix">79€</p>
+              </div>
+              <div class="article__entrees">
+                <p class="article__taille">Velouté de légumes d'antant</p>
+                <p class="article__prix">57€</p>
+              </div>
+              <div class="article__entrees">
+                <p class="article__taille">Soupe à l'oignon revisitée</p>
+                <p class="article__prix">57€</p>
+              </div>
+            </div>
+          </article>
 <!-- plats principaux -->
-        <article class="section__plats">
-          <hr class="section__plats--separation">
-          <h4>Plaisir des papilles</h4>
-          <hr class="section__plats--separation">
-<!-- liste des plats principaux -->
-          <ul class="section__plats--plats">
-            <li>Coquilles Saint-Jacques accompagnées d'une purée de panais</li>
-            <li>Magret de canard et parmentier de pommes de terres</li>
-            <li>Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes</li>
-          </ul>
-<!-- liste des prix des plats principaux -->
-          <ul class="section__plats--prix">
-            <li>95€</li>
-            <li>88€</li>
-            <li>175€</li>
-          </ul>
+          <article>
+<!-- séparateur des plats -->
+            <div class="img__plats">
+              <img class="img__plats--gauche" src="css/img/separateur_gauche2.jpg" alt="séparateur_gauche" /> 
+              <img class="img__plats--droite" src="css/img/separateur_droite2.jpg" alt="séparateur_droite" />
+              <h4>Plaisir des papilles</h4>
+            </div>
+<!-- dispotion des plats principaux -->
+            <div class="article__plats--disposition">
+<!-- plats + prix des plats principaux -->
+              <div class="article__plats">
+                <p class="article__taille">Coquilles Saint-Jacques accompagnées d'une purée de panais</p>
+                <p class="article__prix">95€</p>
+              </div>
+              <div class="article__plats">
+                <p class="article__taille">Magret de canard et parmentier de pommes de terres</p>
+                <p class="article__prix">88€</p>
+              </div>
+              <div class="article__plats">
+                <p class="article__taille">Pigeonneau d'Ille et Vilaine sur son lit de gnocchis aux légumes</p>
+                <p class="article__prix">175€</p>
+              </div>
+            </div>
+          </div>
         </article>
 <!-- desserts -->
-        <article class="section__desserts">
-          <hr class="section__desserts--separation">
-          <h4>Gourmandises sucrées</h4>
-          <hr class="section__desserts--separation">
-<!-- liste des desserts -->
-          <ul class="section__desserts--plats">
-            <li>Pétales de violettes glacées et purée de noisettes</li>
-            <li>Fondant au chocolat revisité</li>
-            <li>Millefeuille croustillant</li>
-          </ul>
+        <article>
+<!-- séparateur des desserts -->
+          <div class="img__desserts">
+            <img class="img__desserts--gauche" src="css/img/separateur_gauche3.jpg" alt="séparateur_gauche" /> 
+            <img class="img__desserts--droite" src="css/img/separateur_droite3.jpg" alt="séparateur_droite" />
+            <h4>Gourmandises sucrées</h4>
+          </div>
+<!--plats des desserts -->
+          <div class="article__desserts">
+            <p>Pétales de violettes glacées et purée de noisettes</p>
+            <p>Fondant au chocolat revisité</p>
+            <p>Millefeuille croustillant</p>
+          </div>
         </article>
       </section>
 <!-- footer -->
       <footer>
-        <a href="mentions.html" target="_blank">Mentions légales</a>
-        <a href="contact.html" target="_blank">Contactez-nous</a>
+        <a class="footer__mentions" href="Mentions/index.html" target="_blank">Mentions légales</a>
+        <a class="footer__contact" href="Contact/index.html" target="_blank">Contactez-nous</a>
       </footer>
     </div>
   </body>
