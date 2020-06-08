@@ -140,6 +140,21 @@ section h2 {
     margin: auto;
 }
 
+/* ---- marge séparateur des entrées, plats et desserts ---- */
+.img__entrées, .img__plats, .img__desserts {
+    margin-top: 21px;
+}
+
+/* ---- marge séparateur des entrées et plats ---- */
+.img__entrées, .img__plats {
+    margin-bottom: 21px;
+}
+
+/* ---- marges séparateur des desserts ---- */
+.img__desserts {
+    margin-bottom: 37px;
+}
+
 /* ---- marge + taille titre h3 haut de page ---- */
 .logo__hautdepage h3 {
     margin-top: 0;
@@ -176,14 +191,55 @@ section h2 {
     width: 40px;
 }
 
+/* ---- soulignement des h4 entrées / pats / desserts ---- */
+.img__entrées h4 {
+    width: 55px;
+}
+
+.img__plats h4 {
+    width: 95px;
+}
+
+.img__desserts h4 {
+    width: 121px;
+}
+
+h4 {
+    max-width: 100%;
+    margin: auto;
+}
+
+h4::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #3d1319;
+    width: 0%;
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+h4:hover::after {
+  width: 100%;
+}
+
 /* ---- disposition des listes ---- */
 .article__entrées--disposition, .article__plats--disposition {
     display: flex;
 }
 
-/* ---- taille + style italique du texte des listes ---- */
-.article__entrées--plats li, .article__entrées--prix li, .article__plats--plats li, .article__plats--prix li, .article__desserts--plats li {
+/* ---- taille + style italique du texte des listes des plats ---- */
+.article__entrées--plats li, .article__plats--plats li, .article__desserts--plats li {
     font-size: 0.6em;
+}
+
+/* ---- taille du texte des listes des prix ---- */
+.article__entrées--prix li, .article__plats--prix li {
+    font-size: 0.7em;
+}
+
+/* ---- style italique du texte des listes plats/prix ---- */
+.article__entrées--plats li, .article__entrées--prix li, .article__plats--plats li, .article__plats--prix li, .article__desserts--plats li {
     font-style: italic;
 }
 
