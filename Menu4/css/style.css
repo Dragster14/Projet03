@@ -3,10 +3,10 @@
 /* ------------------------- */
 
 /*
-L.34  ->    GENERALS
-L.67  ->    HEADER
-L.88  ->    SECTION
-L.288 ->    FOOTER
+L.  ->    GENERALS
+L.  ->    HEADER
+L.  ->    SECTION
+L. ->    FOOTER
 */
 
 /* ------------------------- */
@@ -14,11 +14,10 @@ L.288 ->    FOOTER
 /* ------------------------- */
 
 /*
-vert ->             #579C87 -rgb(87, 156, 135)-
+vert  ->            #579C87 -rgb(87, 156, 135)-
 jaune ->            #FDCB46 -rgb(253, 203, 70)-
 blanc ->            #FFFFFF -rgb(255, 255, 255)-
-icone musique ->    #ef475f (rosé) // #f6916a (orange pâle)
-menu1 ->            #FCDFDB -rgb(252, 223, 219)- (fond) // #3d1319 (police)
+menu4 ->            #3e923a (vert foncé) // #72bf56 (vert moyen) // #beff7f (vert clair)
 */
 
 /* ------------------------- */
@@ -26,7 +25,7 @@ menu1 ->            #FCDFDB -rgb(252, 223, 219)- (fond) // #3d1319 (police)
 /* ------------------------- */
 
 /*
-Menu1 ->    'Devonshire' // 'SegoePrint' // 'Nimbus'
+font-family: 'Kaushan Script' // 'SegoePrint';
 */
 
 
@@ -55,11 +54,6 @@ a {
 @font-face {
     font-family: 'SegoePrint';
     src: url("fonts/SegoePrint.ttf") format('TrueType');
-}
-
-@font-face {
-    font-family: 'Nimbus';
-    src: url("fonts/Nimbus.ttf") format('TrueType');
 }
 
 
@@ -92,22 +86,8 @@ header h1 {
 section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 90px;
-}
-
-/* ---- taille + police titre h2 ---- */
-section h2 {
-    font-size: 1.4em;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-family: 'Nimbus', 'Trebuchet MS', 'sans-serif';
-}
-
-/* ---- taille + couleur de fond de la carte ---- */
-.section__bg {
     width: 80%;
-    background-color: #FCDFDB;
+    margin: auto;
 }
 
 /* ---- alignement logo haut de page + titre h4 ---- */
@@ -115,9 +95,10 @@ section h2 {
     text-align: center;
 }
 
-/* ---- coupure logo sur petits écrans ---- */
-.logo__hautdepage, .logo__basdepage {
-    overflow: auto;
+/* ---- alignement logo haut de page ---- */
+.logo__hautdepage {
+    display: flex;
+    justify-content: center;
 }
 
 /* ---- taille + marge des séparateurs gauche et droite ---- */
@@ -125,7 +106,7 @@ section h2 {
     width: 32%;
     max-width: 100%;
     height: auto;
-    margin-top: 4px;
+    margin-top: 9px;
 }
 
 /* ---- positionnement séparateur gauche ---- */
@@ -139,7 +120,7 @@ section h2 {
 }
 
 /* ---- taille + alignement du texte et séparateurs ---- */
-.img__entrees, .img__plats, .img__desserts, .article__entrees--disposition, .article__plats--disposition, .article__desserts {
+.article__entrees--disposition, .article__plats--disposition, .article__desserts {
     width: 80%;
     margin: auto;
 }
@@ -155,20 +136,21 @@ section h2 {
     margin-bottom: 21px;
 }
 
+/* ---- marge desserts ---- */
+.article__desserts--marge {
+    margin-bottom: 90px;
+}
+
 /* ---- marge + taille titre h3 haut de page ---- */
 .logo__hautdepage h3 {
-    margin-top: 0;
+    font-family: 'Kaushan Script', 'Trebuchet MS', 'sans-serif';
     font-size: 1.8em;
-}
-
-/* ---- police titre h3 ---- */
-.logo__hautdepage h3, .logo__basdepage h3 {
-    font-family: 'Devonshire', 'Trebuchet MS', 'sans-serif';
-}
-
-/* ---- police h4 + texte ---- */
-h4, p {
-    font-family: 'SegoePrint', 'Trebuchet MS', 'sans-serif';
+    background: linear-gradient(to bottom right, #3e923a, #72bf56, #beff7f);
+    width: 260px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 35px;
+    margin-bottom: 15px;
 }
 
 /* ---- taille titre h4 ---- */
@@ -176,29 +158,27 @@ h4 {
     max-width: 100%;
     margin: auto;
     font-size: 0.9em;
+    font-weight: normal;
 }
 
-/* ---- couleur h3 + h4 + texte ---- */
-h3, h4, p {
-    color: #3d1319;
-}
-
-/* ---- style italique du texte ---- */
-p {
-    font-style: italic;
+/* ---- police h4 + texte ---- */
+h4, p {
+    font-family: 'SegoePrint', 'Trebuchet MS', 'sans-serif';
 }
 
 /* ---- taille des blocs et du texte ---- */
 .article__taille {
     width: 79%;
-}
-
-/* ---- taille du texte ---- */
-.article__taille, .article__desserts p {
     font-size: 0.6em;
 }
 
-/* ---- style gras + taille + alignement des prix ---- */
+/* ---- marge du texte ---- */
+.article__taille, .article__prix {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ---- taille + alignement des prix ---- */
 .article__prix {
     font-weight: bold;
     font-size: 0.8em;
@@ -208,86 +188,38 @@ p {
     align-items: center;
 }
 
-/* ---- alignement texte et prix ---- */
-.article__entrees, .article__plats {
+/* ---- alignement + marge texte et prix ---- */
+.article__entrees, .article__plats, .article__desserts {
     display: flex;
-}
-
-/* ---- marge du texte ---- */
-.article__taille, .article__prix {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* ---- marge texte et prix ---- */
-.article__entrees, .article__plats, .article__desserts p {
     margin-bottom: 10px;
 }
 
-/* ---- marge + dégradé couleur icône musique ---- */
-.fa-music {
-    background: linear-gradient(to bottom right, #ef475f, #f6916a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-top: 50px;
-}
-
-/* ---- taille logo haut de page + fond de couleur ---- */
-.logo__hautdepage i {
-    font-size: 2.9em;
+/* ---- soulignement des h4 entrées / plats / desserts ---- */
+.img__entrees h4 {
     width: 60px;
 }
 
-/* ---- taille logo bas de page ---- */
-.logo__basdepage i {
-    font-size: 2em;
-    width: 40px;
-}
-
-/* ---- soulignement des h4 entrées / pats / desserts ---- */
-.img__entrees h4 {
-    width: 55px;
-}
-
 .img__plats h4 {
-    width: 95px;
+    width: 130px;
 }
 
 .img__desserts h4 {
-    width: 121px;
+    width: 146px;
 }
 
 h4::after {
     content: "";
     display: block;
+    background: black;
     height: 2px;
-    background-color: #3d1319;
     width: 0%;
     transition-property: width;
     transition-duration: 1s;
 }
 
 h4:hover::after {
-  width: 100%;
+    width: 100%;
 }
-
-/* ---- position + marges logo restaurant bas de page ---- */
-.logo__basdepage {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
-}
-
-/* ---- taille + couleur logo restaurant bas de page ---- */
-.logo__basdepage h3 {
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    font-size: 1.4em;
-}
-
 
 
 /* ------------------------- */

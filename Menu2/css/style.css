@@ -184,11 +184,6 @@ h4 {
     font-size: 0.6em;
 }
 
-/* ---- marge entre les textes du dessert ---- */
-.article__desserts p {
-    margin-bottom: 31px;
-}
-
 /* ---- taille + alignement des prix ---- */
 .article__prix {
     font-size: 0.8em;
@@ -201,6 +196,17 @@ h4 {
 /* ---- alignement texte et prix ---- */
 .article__entrees, .article__plats {
     display: flex;
+}
+
+/* ---- marge du texte ---- */
+.article__taille, .article__prix {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ---- marge texte et prix ---- */
+.article__entrees, .article__plats, .article__desserts p {
+    margin-bottom: 10px;
 }
 
 /* ---- soulignement des h4 entrées / plats / desserts ---- */

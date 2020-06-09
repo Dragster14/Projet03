@@ -2,6 +2,9 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet" />
     <title>La palette du goût</title>
   </head>
   <body>
@@ -9,75 +12,90 @@
     <div class="body__bg">
 <!-- header + background -->
       <header>
-        <a href="index.html"><h1>ohmyfood</h1></a>
+        <a href="..\index.html"><h1>ohmyfood</h1></a>
       </header>
-<!-- nom du restaurant -->
-      <h2>La palette du goût</h2>
 <!-- section -->
       <section>
-<!-- logo restaurant dans l'entête -->
-        <div class="logo__entête">
+<!-- logo restaurant haut de page -->
+        <div class="logo__hautdepage">
           <h3>La palette du goût</h3>
         </div>
 <!-- entrées -->
-        <article class="section__entrées">
-          <hr class="section__entrées--separation">
-          <h4>Esquisse</h4>
-          <hr class="section__entrées--separation">
-<!-- liste des entrées -->
-          <ul class="section__entrées--plats">
-            <li>Fricassée d'escargot au piment d'espelette</li>
-            <li>Oeuf au plat assaisonné à la truffe sur lit de caviar</li>
-            <li>Foie gras de canard mi-cuit et ses copeaux de truffe noire</li>
-          </ul>
-<!-- liste des prix des entrées -->
-          <ul class="section__entrées--prix">
-            <li>60€</li>
-            <li>55€</li>
-            <li>65€</li>
-          </ul>
+        <article>
+          <div class="img__entrees">
+            <img class="img__entrees--gauche" src="css/img/separateur_gauche.jpg" alt="séparateur_gauche" /> 
+            <img class="img__entrees--droite" src="css/img/separateur_droite.jpg" alt="séparateur_droite" />
+            <h4>Esquisse</h4>
+          </div>
+<!-- dispotion des entrées -->
+          <div class="article__entrees--disposition">
+<!-- plats + prix des entrées -->
+            <div class="article__entrees">
+              <p class="article__taille">Fricassée d'escargot au piment d'espelette</p>
+              <p class="article__prix">60€</p>
+            </div>
+            <div class="article__entrees">
+              <p class="article__taille">Oeuf au plat assaisonné à la truffe sur lit de caviar</p>
+              <p class="article__prix">55€</p>
+            </div>
+            <div class="article__entrees">
+              <p class="article__taille">Foie gras de canard mi-cuit et ses copeaux de truffe noire</p>
+              <p class="article__prix">65€</p>
+            </div>
+          </div>
         </article>
 <!-- plats principaux -->
-        <article class="section__plats">
-          <hr class="section__plats--separation">
-          <h4>Oeuvre de maître</h4>
-          <hr class="section__plats--separation">
-<!-- liste des plats principaux -->
-          <ul class="section__plats--plats">
-            <li>Filet de boeuf aux herbes accompagné de sa ribambelle de légumes</li>
-            <li>Parmentier de queue de boeuf à la truffe noire sur sa purée de panais</li>
-            <li>Filet de Turbot aux agrumes</li>
-          </ul>
-<!-- liste des prix des plats principaux -->
-          <ul class="section__plats--prix">
-            <li>70€</li>
-            <li>85€</li>
-            <li>125€</li>
-          </ul>
+        <article>
+<!-- séparateur des plats -->
+          <div class="img__plats">
+            <img class="img__plats--gauche" src="css/img/separateur_gauche.jpg" alt="séparateur_gauche" /> 
+            <img class="img__plats--droite" src="css/img/separateur_droite.jpg" alt="séparateur_droite" />
+            <h4>Oeuvre de maître</h4>
+          </div>
+<!-- dispotion des plats principaux -->
+          <div class="article__plats--disposition">
+<!-- plats + prix des plats principaux -->
+            <div class="article__plats">
+              <p class="article__taille">Filet de boeuf aux herbes accompagné de sa ribambelle de légumes</p>
+              <p class="article__prix">70€</p>
+            </div>
+            <div class="article__plats">
+              <p class="article__taille">Parmentier de queue de boeuf à la truffe noire sur sa purée de panais</p>
+              <p class="article__prix">85€</p>
+            </div>
+            <div class="article__plats">
+              <p class="article__taille">Filet de Turbot aux agrumes</p>
+              <p class="article__prix">125€</p>
+            </div>
+          </div>
         </article>
 <!-- desserts -->
-        <article class="section__desserts">
-          <hr class="section__desserts--separation">
-          <h4>Au sommet de l'art</h4>
-          <hr class="section__desserts--separation">
-<!-- liste des desserts -->
-          <ul class="section__desserts--plats">
-            <li>Paris-Brest revisité</li>
-            <li>Macaron au chocolat d'exception et glace à la vanille de Madagascar</li>
-            <li>Mousse au chocolat au piment d'espelette et à la truffe noire</li>
-          </ul>
-<!-- liste des prix des desserts -->
-          <ul class="section__desserts--prix">
-            <li>55€</li>
-            <li>65€</li>
-            <li>60€</li>
-          </ul>
+        <article class="article__desserts--marge">
+<!-- séparateur des desserts -->
+          <div class="img__desserts">
+            <img class="img__desserts--gauche" src="css/img/separateur_gauche.jpg" alt="séparateur_gauche" /> 
+            <img class="img__desserts--droite" src="css/img/separateur_droite.jpg" alt="séparateur_droite" />
+            <h4>Au sommet de l'art</h4>
+          </div>
+<!--plats des desserts -->
+          <div class="article__desserts">
+            <p class="article__taille">Paris-Brest revisité</p>
+            <p class="article__prix">55€</p>
+          </div>
+          <div class="article__desserts">
+            <p class="article__taille">Macaron au chocolat d'exception et glace à la vanille de Madagascar</p>
+            <p class="article__prix">65€</p>
+          </div>
+          <div class="article__desserts">
+            <p class="article__taille">Mousse au chocolat au piment d'espelette et à la truffe noire</p>
+            <p class="article__prix">60€</p>
+          </div>
         </article>
       </section>
 <!-- footer -->
       <footer>
-        <a href="mentions.html" target="_blank">Mentions légales</a>
-        <a href="contact.html" target="_blank">Contactez-nous</a>
+        <a class="footer__mentions" href="..\Mentions\index.html" target="_blank">Mentions légales</a>
+        <a class="footer__contact" href="..\Contact\index.html" target="_blank">Contactez-nous</a>
       </footer>
     </div>
   </body>

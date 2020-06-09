@@ -181,9 +181,16 @@ h4, p {
     align-items: center;
 }
 
+/* ---- marge du texte ---- */
+.article__taille, .article__prix {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* ---- alignement texte et prix ---- */
 .article__entrees, .article__plats, .article__desserts {
     display: flex;
+    margin-bottom: 10px;
 }
 
 /* ---- soulignement des h4 entrées / plats / desserts ---- */
@@ -211,7 +218,7 @@ h4::after {
 
 h4:hover::after {
     width: 100%;
-  }
+}
 
 
 /* ------------------------- */
