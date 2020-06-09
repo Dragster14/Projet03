@@ -185,7 +185,6 @@ h4, p {
     width: 20%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
 /* ---- alignement + marge texte et prix ---- */
