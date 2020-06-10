@@ -6,7 +6,7 @@
 L.34  ->    GENERALS
 L.67  ->    HEADER
 L.88  ->    SECTION
-L.288 ->    FOOTER
+L.271 ->    FOOTER
 */
 
 /* ------------------------- */
@@ -54,12 +54,12 @@ a {
 /* ---- polices ---- */
 @font-face {
     font-family: 'SegoePrint';
-    src: url("fonts/SegoePrint.ttf") format('TrueType');
+    src: url("../../Ressources/fonts/SegoePrint.ttf") format('TrueType');
 }
 
 @font-face {
     font-family: 'Nimbus';
-    src: url("fonts/Nimbus.ttf") format('TrueType');
+    src: url("../../Ressources/fonts/Nimbus.ttf") format('TrueType');
 }
 
 
@@ -120,22 +120,17 @@ section h2 {
     overflow: auto;
 }
 
-/* ---- taille + marge des séparateurs gauche et droite ---- */
+/* ---- proportion des séparateurs gauche et droite ---- */
 .img__entrees img, .img__plats img, .img__desserts img {
-    width: 32%;
     max-width: 100%;
     height: auto;
-    margin-top: 4px;
 }
 
-/* ---- positionnement séparateur gauche ---- */
-.img__entrees--gauche, .img__plats--gauche, .img__desserts--gauche {
-    float: left;
-}
-
-/* ---- positionnement séparateur droite ---- */
-.img__entrees--droite, .img__plats--droite, .img__desserts--droite {
-    float: right;
+/* ---- taille des séparateurs gauche et droite ---- */
+.img__entrees p, .img__plats p, .img__desserts p {
+    width: 32%;
+    display: flex;
+    align-items: center;
 }
 
 /* ---- taille + alignement du texte et séparateurs ---- */
@@ -144,13 +139,10 @@ section h2 {
     margin: auto;
 }
 
-/* ---- retrait float ---- */
-.article__entrees, .article__plats, .article__desserts {
-    clear: both;
-}
-
-/* ---- marge séparateur ---- */
+/* ---- alignement + marge séparateur ---- */
 .img__entrees, .img__plats, .img__desserts {
+    display: flex;
+    justify-content: space-between;
     margin-top: 21px;
     margin-bottom: 21px;
 }
@@ -173,8 +165,6 @@ h4, p {
 
 /* ---- taille titre h4 ---- */
 h4 {
-    max-width: 100%;
-    margin: auto;
     font-size: 0.9em;
 }
 
@@ -244,18 +234,6 @@ p {
 }
 
 /* ---- soulignement des h4 entrées / pats / desserts ---- */
-.img__entrees h4 {
-    width: 55px;
-}
-
-.img__plats h4 {
-    width: 95px;
-}
-
-.img__desserts h4 {
-    width: 121px;
-}
-
 h4::after {
     content: "";
     display: block;

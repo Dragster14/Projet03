@@ -6,7 +6,7 @@
 L.33  ->    GENERALS
 L.61  ->    HEADER
 L.82  ->    SECTION
-L.255 ->    FOOTER
+L.226 ->    FOOTER
 */
 
 /* ------------------------- */
@@ -53,7 +53,7 @@ a {
 /* ---- polices ---- */
 @font-face {
     font-family: 'Mimix';
-    src: url("fonts/Mimix.ttf") format('TrueType');
+    src: url("../../Ressources/fonts/Mimix.ttf") format('TrueType');
 }
 
 
@@ -88,6 +88,7 @@ section {
     flex-direction: column;
     width: 80%;
     margin: auto;
+    margin-bottom: 90px;
 }
 
 /* ---- alignement logo haut de page + titre h4 ---- */
@@ -101,21 +102,17 @@ section {
     justify-content: center;
 }
 
-/* ---- taille + marge des séparateurs gauche et droite ---- */
+/* ---- proportion des séparateurs gauche et droite ---- */
 .img__entrees img, .img__plats img, .img__desserts img {
-    width: 32%;
     max-width: 100%;
     height: auto;
 }
 
-/* ---- positionnement séparateur gauche ---- */
-.img__entrees--gauche, .img__plats--gauche, .img__desserts--gauche {
-    float: left;
-}
-
-/* ---- positionnement séparateur droite ---- */
-.img__entrees--droite, .img__plats--droite, .img__desserts--droite {
-    float: right;
+/* ---- taille des séparateurs gauche et droite ---- */
+.img__entrees p, .img__plats p, .img__desserts p {
+    width: 32%;
+    display: flex;
+    align-items: center;
 }
 
 /* ---- taille + alignement du texte et séparateurs ---- */
@@ -124,18 +121,10 @@ section {
     margin: auto;
 }
 
-/* ---- retrait float ---- */
-.article__entrees, .article__plats, .article__desserts {
-    clear: both;
-}
-
-/* ---- marge texte des desserts ---- */
-.article__desserts {
-    margin-bottom: 90px;
-}
-
-/* ---- marge séparateur ---- */
+/* ---- alignement + marge séparateur ---- */
 .img__entrees, .img__plats, .img__desserts {
+    display: flex;
+    justify-content: space-between;
     margin-top: 21px;
     margin-bottom: 21px;
 }
@@ -154,8 +143,6 @@ section {
 
 /* ---- taille titre h4 ---- */
 h4 {
-    max-width: 100%;
-    margin: auto;
     font-size: 0.9em;
 }
 
@@ -209,18 +196,6 @@ h4 {
 }
 
 /* ---- soulignement des h4 entrées / plats / desserts ---- */
-.img__entrees h4 {
-    width: 157px;
-}
-
-.img__plats h4 {
-    width: 115px;
-}
-
-.img__desserts h4 {
-    width: 141px;
-}
-
 h4::after {
     content: "";
     display: block;

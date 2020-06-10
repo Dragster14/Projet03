@@ -57,27 +57,27 @@ a {
 /* ---- polices ---- */
 @font-face {
     font-family: 'SegoePrint';
-    src: url("fonts/SegoePrint.ttf") format('TrueType');
+    src: url("..\Ressources\fonts\SegoePrint.ttf") format('TrueType');
 }
 
 @font-face {
     font-family: 'Mimix';
-    src: url("fonts/Mimix.ttf") format('TrueType');
+    src: url("..\Ressources\fonts\Mimix.ttf") format('TrueType');
 }
 
 @font-face {
     font-family: 'CasusPro';
-    src: url("fonts/CasusPro.ttf") format('TrueType');
+    src: url("..\Ressources\fonts\CasusPro.ttf") format('TrueType');
 }
 
 /*@font-face {
     font-family: 'Rusulica';
-    src: url("fonts/Rusulica.ttf") format('TrueType');
+    src: url("..\Ressources\fonts\Rusulica.ttf") format('TrueType');
 }*/
 
 @font-face {
     font-family: 'SegoeScript';
-    src: url("fonts/SegoeScript.ttf") format('TrueType');
+    src: url("..\Ressources\fonts\SegoeScript.ttf") format('TrueType');
 }
 
 
