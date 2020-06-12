@@ -3,10 +3,11 @@
 /* ------------------------- */
 
 /*
-L.24  ->    GENERALS
-L.47  ->    HEADER
-L.70  ->    SECTION
-L.105 ->    FOOTER
+L.25  ->    GENERALS
+L.48  ->    HEADER
+L.71  ->    SECTION
+L.106 ->    FOOTER
+L.158 ->    MEDIA QUERIES
 */
 
 /* ------------------------- */
@@ -150,4 +151,47 @@ footer {
     40%, 60% { 
     transform: translate3d(4px, 0, 0); 
     } 
+}
+
+
+/* ------------------------- */
+/*       MEDIA QUERIES       */
+/*          1200px           */
+/* ------------------------- */
+
+@media all and (min-width: 1200px) {
+    /* ---- taille h1 ---- */
+    header h1 {
+        font-size: 4em;
+        margin-top: 85.5px;
+        margin-bottom: 85.5px;
+    }
+
+    /* ---- marges section ---- */
+    .section__texte {
+        margin-bottom: 200px;
+    }
+
+    /* ---- taille du titre ---- */
+    section h2 {
+        font-size: 2em;
+    }
+
+    /* ---- taille du texte ---- */
+    section p {
+        font-size: 1.5em;
+    }
+
+    /* ---- enluminure de la première lettre ---- */
+    .section__texte--firstletter::first-letter {
+        font-size: 2.1em;
+    }
+
+    /* ---- taille mentions ---- */
+    .footer__contact {
+        font-size: 2.7em;
+        margin-top: 43px;
+        margin-bottom: 43px;
+    }
+
 }
