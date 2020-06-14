@@ -3,10 +3,11 @@
 /* ------------------------- */
 
 /*
-L.33  ->    GENERALS
-L.61  ->    HEADER
-L.82  ->    SECTION
-L.226 ->    FOOTER
+L.34  ->    GENERALS
+L.62  ->    HEADER
+L.83  ->    SECTION
+L.227 ->    FOOTER
+L.287 ->    MEDIA QUERIES
 */
 
 /* ------------------------- */
@@ -279,4 +280,74 @@ footer {
     40%, 60% { 
     transform: translate3d(4px, 0, 0); 
     } 
+}
+
+
+/* ------------------------- */
+/*       MEDIA QUERIES       */
+/*          1200px           */
+/* ------------------------- */
+
+@media all and (min-width: 1200px) {
+
+    /* ---- taille h1 ---- */
+    header h1 {
+        font-size: 4em;
+        margin-top: 85.5px;
+        margin-bottom: 85.5px;
+    }
+
+    /* ---- marge section ---- */
+    section {
+        margin-bottom: 200px;
+    }
+
+    /* ---- taille du h2 ---- */
+    section h2 {
+        font-size: 2.5em;
+    }
+
+    /* ---- taille des séparateurs gauche et droite ---- */
+    .img__entrees img, .img__plats img, .img__desserts img {
+        width: 285px;
+    }
+
+    /* ---- taille titre h3 haut de page ---- */
+    .logo__hautdepage h3 {
+        font-size: 3em;
+        width: 480px;
+    }
+
+    /* ---- taille titre h4 ---- */
+    h4 {
+        font-size: 2em;
+    }
+
+    /* ---- taille du texte ---- */
+    .article__taille, .article__desserts p, .article__prix {
+        font-size: 1.2em;
+    }
+
+    /* ---- alignement éléments du footer ---- */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* ---- taille mentions et contact ---- */
+    .footer__mentions, .footer__contact {
+        font-size: 2.7em;
+        margin-top: 43px;
+        margin-bottom: 43px;
+    }
+
+    /* ---- marge mentions ---- */
+    .footer__mentions {
+        margin-left: 40px;
+    }
+
+    /* ---- marge contact ---- */
+    .footer__contact {
+        margin-right: 40px;
+    }
 }
