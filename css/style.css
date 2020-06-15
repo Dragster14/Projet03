@@ -57,17 +57,17 @@ a {
 /* ---- polices ---- */
 @font-face {
     font-family: 'SegoePrint';
-    src: url("..\Ressources\fonts\SegoePrint.ttf") format('TrueType');
+    src: url("../Ressources/fonts/SegoePrint.ttf") format('TrueType');
 }
 
 @font-face {
     font-family: 'Mimix';
-    src: url("..\Ressources\fonts\Mimix.ttf") format('TrueType');
+    src: url("../Ressources/fonts/Mimix.ttf") format('TrueType');
 }
 
 @font-face {
     font-family: 'CasusPro';
-    src: url("..\Ressources\fonts\CasusPro.ttf") format('TrueType');
+    src: url("../Ressources/fonts/CasusPro.ttf") format('TrueType');
 }
 
 /*@font-face {
@@ -77,7 +77,7 @@ a {
 
 @font-face {
     font-family: 'SegoeScript';
-    src: url("..\Ressources\fonts\SegoeScript.ttf") format('TrueType');
+    src: url("../Ressources/fonts/SegoeScript.ttf") format('TrueType');
 }
 
 
@@ -109,13 +109,6 @@ header h1 {
 /*          ARTICLES         */
 /* ------------------------- */
 
-/* ---- alignement articles dans container ---- */
-.container__article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 /* ---- taille des menus ---- */
 .article__menu1, .article__menu2, .article__menu3, .article__menu4 {
     width: 100%;
@@ -127,7 +120,6 @@ header h1 {
 /* ---- alignement des menus ---- */
 .article__menu1 a, .article__menu2 a, .article__menu3 a, .article__menu4 a {
     width: 80%;
-    height: 597px;
     box-shadow: 0px 0px 10px rgba(21,21,21,0.4);
     overflow: hidden;
 }
@@ -139,7 +131,6 @@ header h1 {
 
 /* ---- animation des menus ---- */
 .article__menu1--texte, .article__menu2--texte, .article__menu3--texte, .article__menu4--texte {
-    width: 100%;
     height: 597px;
     display: flex;
     flex-direction: column;
@@ -253,6 +244,8 @@ header h1 {
     border-radius: 10px;
     background-color: #579C87;
     margin-bottom: 77px;
+    margin-right: auto;
+    margin-left: auto;
     width: 43%;
     display: flex;
     justify-content: center;
@@ -401,4 +394,124 @@ footer {
     40%, 60% { 
     transform: translate3d(4px, 0, 0); 
     } 
+}
+
+
+/* ------------------------- */
+/*       MEDIA QUERIES       */
+/*          1200px           */
+/* ------------------------- */
+
+@media all and (min-width: 1200px) {
+
+    /* ---- taille h1 ---- */
+    header h1 {
+        font-size: 4em;
+        margin-top: 85.5px;
+        margin-bottom: 85.5px;
+    }
+
+    /* ---- alignement des menus ---- */
+    .container__article {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* ---- hauteur des menus ---- */
+    .article__menu1--texte, .article__menu2--texte, .article__menu3--texte, .article__menu4--texte {
+        height: 760px;
+    }
+
+    /* ---- marge menus de gauche ---- */
+    .article__menu1 a, .article__menu3 a {
+        margin-left: 160px;
+        margin-right: 50px;
+    }
+
+    /*---- marge menus de droite ---- */
+    .article__menu2 a, .article__menu4 a {
+        margin-right: 160px;
+        margin-left: 50px;
+    }
+
+    /* ---- marge des menus ---- */
+    .article__menu1, .article__menu2, .article__menu3, .article__menu4, .div__prochainement {
+        margin-top: 100px;
+    }
+
+    /* ---- taille du noms des restaurants ---- */
+    .article__menu1--texte p, .article__menu2--texte p, .article__menu3--texte p, .article__menu4--texte p {
+        font-size: 2.4em;
+    }
+
+    /* ---- taille fond coloré menu2 ---- */
+    .article__menu2--texte p {
+        width: 385px;
+    }
+
+    /* ---- taille fond coloré menu3 ---- */
+    .article__menu3--texte p {
+        width: 375px;
+    }
+
+    /* ---- taille fond coloré menu4 ---- */
+    .article__menu4--texte p {
+        width: 275px;
+    }
+
+    /* ---- taille du texte menu ---- */
+    .article__menu1--texte h2, .article__menu2--texte h2, .article__menu3--texte h2, .article__menu4--texte h2 {
+        font-size: 2.6em;
+    }
+
+    /* ---- taille icône musique ---- */
+    .fa-music {
+        font-size: 3.8em;
+        width: 65px;
+    }
+
+    /* ---- taille du texte prochainement ---- */
+    .div__prochainement p {
+        font-size: 2.7em;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    /* ---- marge du prochainement ---- */
+    .div__prochainement {
+        margin-top: 95px;
+        margin-bottom: 220px;
+        border-radius: 20px;
+        align-items: baseline;
+    }
+
+    /* ---- taille + marges animation points de suspension ---- */
+    .div__prochainement--point1, .div__prochainement--point2, .div__prochainement--point3 {
+        font-size: 2em;
+        margin-left: 8px;
+        margin-bottom: 0px;
+    }
+
+    /* ---- alignement éléments du footer ---- */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* ---- taille mentions et contact ---- */
+    .footer__mentions, .footer__contact {
+        font-size: 2.7em;
+        margin-top: 43px;
+        margin-bottom: 43px;
+    }
+
+    /* ---- marge mentions ---- */
+    .footer__mentions {
+        margin-left: 40px;
+    }
+
+    /* ---- marge contact ---- */
+    .footer__contact {
+        margin-right: 40px;
+    }
 }

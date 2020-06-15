@@ -156,6 +156,7 @@ footer {
 /* ------------------------- */
 
 @media all and (min-width: 1200px) {
+    
     /* ---- taille h1 ---- */
     header h1 {
         font-size: 4em;
