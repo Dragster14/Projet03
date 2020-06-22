@@ -3,11 +3,12 @@
 /* ------------------------- */
 
 /*
-L.35  ->    GENERALS
-L.73  ->    HEADER
-L.95  ->    SECTION
-L.211 ->    FOOTER
-L.272 ->    MEDIA QUERIES
+L.36  ->    GENERALS
+L.74  ->    HEADER
+L.96  ->    SECTION
+L.212 ->    FOOTER
+L.273 ->    MEDIA QUERIES (1200px)
+L.342 ->    MEDIA QUERIES (501px-1199px)
 */
 
 /* ------------------------- */
@@ -323,6 +324,37 @@ footer {
         font-size: 2em;
         margin-top: 21.5px;
         margin-bottom: 21.5px;
+    }
+
+    /* ---- marge mentions ---- */
+    .footer__mentions {
+        margin-left: 40px;
+    }
+
+    /* ---- marge contact ---- */
+    .footer__contact {
+        margin-right: 40px;
+    }
+}
+
+
+/* ------------------------- */
+/*       MEDIA QUERIES       */
+/*       501px-1199px        */
+/* ------------------------- */
+
+@media all and (min-width: 501px) and (max-width: 1199px) {
+
+    /* ---- alignement éléments du footer ---- */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* ---- marges mentions et contact ---- */
+    .footer__mentions, .footer__contact {
+        margin-bottom: 14.5px;
+        margin-top: 14.5px;
     }
 
     /* ---- marge mentions ---- */
