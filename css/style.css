@@ -461,26 +461,6 @@ footer {
         margin-top: 100px;
     }
 
-    /* ---- taille du noms des restaurants ---- */
-    .article__menu1--texte p, .article__menu2--texte p, .article__menu3--texte p, .article__menu4--texte p {
-        font-size: 2.4em;
-    }
-
-    /* ---- taille fond coloré menu2 ---- */
-    .article__menu2--texte p {
-        width: 385px;
-    }
-
-    /* ---- taille fond coloré menu3 ---- */
-    .article__menu3--texte p {
-        width: 375px;
-    }
-
-    /* ---- taille fond coloré menu4 ---- */
-    .article__menu4--texte p {
-        width: 275px;
-    }
-
     /* ---- taille du texte menu ---- */
     .article__menu1--texte h2, .article__menu2--texte h2, .article__menu3--texte h2, .article__menu4--texte h2 {
         font-size: 2.6em;

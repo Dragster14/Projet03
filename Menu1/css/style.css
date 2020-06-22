@@ -448,17 +448,17 @@ footer {
 
     /* ---- taille des séparateurs gauche et droite ---- */
     .img__entrees img, .img__plats img, .img__desserts img {
-        width: 150px;
+        width: 200px;
     }
 
     /* ---- taille titre h4 ---- */
     h4 {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 
     /* ---- taille du texte ---- */
     .article__taille, .article__desserts p, .article__prix {
-        font-size: 0.9em;
+        font-size: 1.2em;
     }
 
     /* ---- taille titre h3 haut de page ---- */
