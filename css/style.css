@@ -3,11 +3,11 @@
 /* ------------------------- */
 
 /*
-L.41  ->    GENERALS
-L.90  ->    HEADER
-L.113 ->    ARTICLES
-L.345 ->    FOOTER
-L.405 ->    MEDIA QUERIES
+L.42  ->    GENERALS
+L.105 ->    HEADER
+L.129 ->    ARTICLES
+L.362 ->    FOOTER
+L.422 ->    MEDIA QUERIES
 */
 
 /* ------------------------- */
@@ -30,10 +30,11 @@ menu4 ->            #3e923a (vert foncé) // #72bf56 (vert moyen) // #beff7f (ve
 /* ------------------------- */
 
 /*
-Menu1 ->    'Devonshire' (p) // 'SegoePrint' (h2)
-Menu2 ->    'Mimix' (p) // 'CasusPro' (h2)
-Menu3 ->    'Rusulica' (p) // 'SegoeScript' (h2)
-Menu4 ->    'Kaushan Script' (p) // 'SegoeScript' (h2)
+MainPage ->    'NexaLight' // 'NexaBold'
+Menu1    ->    'Devonshire' (p) // 'SegoePrint' (h2)
+Menu2    ->    'Mimix' (p) // 'CasusPro' (h2)
+Menu3    ->    'CatsyLight' (p) // 'SegoeScript' (h2)
+Menu4    ->    'Kaushan Script' (p) // 'SegoeScript' (h2)
 */
 
 
@@ -74,16 +75,30 @@ a {
     src: url("../Ressources/fonts/CasusPro.ttf") format('TrueType');
 }
 
-/*@font-face {
-    font-family: 'Rusulica';
-    src: url("..\Ressources\fonts\Rusulica.ttf") format('TrueType');
-}*/
+@font-face {
+    font-family: 'CatsyLight';
+    src: url("../Ressources/fonts/CatsyLight.ttf") format('TrueType');
+}
 
 @font-face {
     font-family: 'SegoeScript';
     src: url("../Ressources/fonts/SegoeScript.ttf") format('TrueType');
 }
 
+@font-face {
+    font-family: 'NexaLight';
+    src: url("../Ressources/fonts/NexaLight.otf") format('OpenType');
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url("../Ressources/fonts/NexaBold.otf") format('OpenType');
+}
+
+/* ---- police prochainement + footer ---- */
+.div__prochainement p, footer a {
+    font-family: 'NexaLight', 'Trebuchet MS', 'sans-serif';
+}
 
 
 /* ------------------------- */
@@ -101,6 +116,7 @@ header {
 
 /* ---- titre h1 ---- */
 header h1 {
+    font-family: 'NexaBold', 'Trebuchet MS', 'sans-serif';
     color: #FDCB46;
     font-size: 2.4em;
     margin-top: 18px;
@@ -153,7 +169,7 @@ header h1 {
     margin-top: 32px;
 }
 
-/* ---- alignement éléméents avec dégradé de couleur ---- */
+/* ---- alignement éléments avec dégradé de couleur ---- */
 .article__menu1--centre, .article__menu2--centre, .article__menu3--centre, .article__menu4--centre {
     display: flex;
     justify-content: center;
@@ -168,14 +184,13 @@ header h1 {
     -webkit-text-fill-color: transparent;
 }
 
-/* ---- taille des noms des menus ---- */
+/* ---- marge des noms des restaurants ---- */
 .article__menu1--texte p, .article__menu2--texte p, .article__menu3--texte p, .article__menu4--texte p {
-    font-size: 1.4em;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-/* ---- taille + marges des titres h2 ---- */
+/* ---- taille des titres h2 ---- */
 .article__menu1--texte h2, .article__menu2--texte h2, .article__menu3--texte h2, .article__menu4--texte h2 {
     font-size: 1.6em;
 }
@@ -185,9 +200,10 @@ header h1 {
     color: #3d1319;
 }
 
-/* ---- police texte du menu1 ---- */
+/* ---- police + taille texte du menu1 ---- */
 .article__menu1--texte p {
     font-family: 'Devonshire', 'Trebuchet MS', 'sans-serif';
+    font-size: 3em;
 }
 
 /* ---- police titre h2 du menu1 ---- */
@@ -198,8 +214,8 @@ header h1 {
 /* ---- police texte + dégradé couleur du menu2 ---- */
 .article__menu2--texte p {
     font-family: 'Mimix', 'Trebuchet MS', 'sans-serif';
+    font-size: 2em;
     background: linear-gradient(to bottom right, #c67412, #a56799,  #6e4ccc);
-    width: 224px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -212,9 +228,10 @@ header h1 {
 
 /* ---- police texte + dégradé couleur du menu3 ---- */
 .article__menu3--texte p {
-    font-family: 'Trebuchet MS', 'sans-serif';
+    font-family: 'CatsyLight', 'Trebuchet MS', 'sans-serif';
+    font-style: italic;
+    font-size: 3.5em;
     background: linear-gradient(to bottom right, #0228dd, #0670f3, #229df9);
-    width: 220px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -237,8 +254,8 @@ header h1 {
 /* ---- police texte + dégradé couleur du menu4 ---- */
 .article__menu4--texte p {
     font-family: 'Kaushan Script', 'Trebuchet MS', 'sans-serif';
+    font-size: 2.8em;
     background: linear-gradient(to bottom right, #3e923a, #72bf56, #beff7f);
-    width: 158px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

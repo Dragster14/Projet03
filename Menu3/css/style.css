@@ -3,11 +3,11 @@
 /* ------------------------- */
 
 /*
-L.34  ->    GENERALS
-L.62  ->    HEADER
-L.83  ->    SECTION
-L.199 ->    FOOTER
-L.259 ->    MEDIA QUERIES
+L.35  ->    GENERALS
+L.78  ->    HEADER
+L.100  ->    SECTION
+L.218 ->    FOOTER
+L.279 ->    MEDIA QUERIES
 */
 
 /* ------------------------- */
@@ -26,7 +26,8 @@ menu3 ->            #0228dd (bleu foncé) // #0670f3 (bleu clair) // #229df9 (bl
 /* ------------------------- */
 
 /*
-font-family: 'Mimix';
+MainPage ->    'NexaLight' // 'NexaBold'
+Menu3    ->    'SegoePrint' // 'CatsyLight'
 */
 
 
@@ -57,6 +58,21 @@ a {
     src: url("../../Ressources/fonts/SegoePrint.ttf") format('TrueType');
 }
 
+@font-face {
+    font-family: 'CatsyLight';
+    src: url("../../Ressources/fonts/CatsyLight.ttf") format('TrueType');
+}
+
+@font-face {
+    font-family: 'NexaLight';
+    src: url("../../Ressources/fonts/NexaLight.otf") format('OpenType');
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url("../../Ressources/fonts/NexaBold.otf") format('OpenType');
+}
+
 
 /* ------------------------- */
 /*          HEADER           */
@@ -73,6 +89,7 @@ header {
 
 /* ---- titre h1 ---- */
 header h1 {
+    font-family: 'NexaBold', 'Trebuchet MS', 'sans-serif';
     color: #FDCB46;
     font-size: 2.4em;
     margin-top: 18px;
@@ -132,9 +149,11 @@ section {
 
 /* ---- marge + taille titre h3 haut de page ---- */
 .logo__hautdepage h3 {
+    font-family: 'CatsyLight', 'Trebuchet MS', 'sans-serif';
+    font-weight: lighter;
+    font-style: italic;
     font-size: 1.8em;
     background: linear-gradient(to bottom right, #0228dd, #0670f3, #229df9);
-    width: 260px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 35px;
@@ -214,6 +233,7 @@ footer {
 
 /* ---- couleur + taille des liens du footer ---- */
 .footer__mentions, .footer__contact {
+    font-family: 'NexaLight', 'Trebuchet MS', 'sans-serif';
     color: #FDCB46;
     font-size: 1em;
 }
@@ -286,8 +306,7 @@ footer {
 
     /* ---- taille titre h3 haut de page ---- */
     .logo__hautdepage h3 {
-        font-size: 3em;
-        width: 435px;
+        font-size: 5em;
     }
 
     /* ---- taille titre h4 ---- */

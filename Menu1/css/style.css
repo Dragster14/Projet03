@@ -3,11 +3,11 @@
 /* ------------------------- */
 
 /*
-L.35  ->    GENERALS
-L.68  ->    HEADER
-L.89  ->    SECTION
-L.272 ->    FOOTER
-L.332 ->    MEDIA QUERIES
+L.36  ->    GENERALS
+L.79  ->    HEADER
+L.101  ->    SECTION
+L.289 ->    FOOTER
+L.350 ->    MEDIA QUERIES
 */
 
 /* ------------------------- */
@@ -27,7 +27,8 @@ menu1 ->            #FCDFDB -rgb(252, 223, 219)- (fond) // #3d1319 (police)
 /* ------------------------- */
 
 /*
-Menu1 ->    'Devonshire' // 'SegoePrint' // 'Nimbus'
+MainPage ->    'NexaLight' // 'NexaBold'
+Menu1    ->    'Devonshire' // 'SegoePrint' // 'Nimbus'
 */
 
 
@@ -63,6 +64,16 @@ a {
     src: url("../../Ressources/fonts/Nimbus.ttf") format('TrueType');
 }
 
+@font-face {
+    font-family: 'NexaLight';
+    src: url("../../Ressources/fonts/NexaLight.otf") format('OpenType');
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url("../../Ressources/fonts/NexaBold.otf") format('OpenType');
+}
+
 
 /* ------------------------- */
 /*          HEADER           */
@@ -79,6 +90,7 @@ header {
 
 /* ---- titre h1 ---- */
 header h1 {
+    font-family: 'NexaBold', 'Trebuchet MS', 'sans-serif';
     color: #FDCB46;
     font-size: 2.4em;
     margin-top: 18px;
@@ -292,6 +304,7 @@ footer {
 
 /* ---- couleur + taille des liens du footer ---- */
 .footer__mentions, .footer__contact {
+    font-family: 'NexaLight', 'Trebuchet MS', 'sans-serif';
     color: #FDCB46;
     font-size: 1em;
 }

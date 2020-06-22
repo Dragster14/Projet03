@@ -3,11 +3,11 @@
 /* ------------------------- */
 
 /*
-L.34  ->    GENERALS
-L.62  ->    HEADER
-L.83  ->    SECTION
-L.200 ->    FOOTER
-L.260 ->    MEDIA QUERIES
+L.35  ->    GENERALS
+L.73  ->    HEADER
+L.95  ->    SECTION
+L.211 ->    FOOTER
+L.272 ->    MEDIA QUERIES
 */
 
 /* ------------------------- */
@@ -26,7 +26,8 @@ menu4 ->            #3e923a (vert foncé) // #72bf56 (vert moyen) // #beff7f (ve
 /* ------------------------- */
 
 /*
-font-family: 'Kaushan Script' // 'SegoePrint';
+MainPage ->    'NexaLight' // 'NexaBold'
+Menu4    ->    'Kaushan Script' // 'SegoePrint'
 */
 
 
@@ -57,6 +58,16 @@ a {
     src: url("../../Ressources/fonts/SegoePrint.ttf") format('TrueType');
 }
 
+@font-face {
+    font-family: 'NexaLight';
+    src: url("../../Ressources/fonts/NexaLight.otf") format('OpenType');
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url("../../Ressources/fonts/NexaBold.otf") format('OpenType');
+}
+
 
 /* ------------------------- */
 /*          HEADER           */
@@ -73,6 +84,7 @@ header {
 
 /* ---- titre h1 ---- */
 header h1 {
+    font-family: 'NexaBold', 'Trebuchet MS', 'sans-serif';
     color: #FDCB46;
     font-size: 2.4em;
     margin-top: 18px;
@@ -135,7 +147,6 @@ section {
     font-family: 'Kaushan Script', 'Trebuchet MS', 'sans-serif';
     font-size: 1.8em;
     background: linear-gradient(to bottom right, #3e923a, #72bf56, #beff7f);
-    width: 260px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 35px;
@@ -215,6 +226,7 @@ footer {
 
 /* ---- couleur + taille des liens du footer ---- */
 .footer__mentions, .footer__contact {
+    font-family: 'NexaLight', 'Trebuchet MS', 'sans-serif';
     color: #FDCB46;
     font-size: 1em;
 }
@@ -288,7 +300,6 @@ footer {
     /* ---- taille titre h3 haut de page ---- */
     .logo__hautdepage h3 {
         font-size: 3em;
-        width: 340px;
     }
 
     /* ---- taille titre h4 ---- */

@@ -3,11 +3,11 @@
 /* ------------------------- */
 
 /*
-L.34  ->    GENERALS
-L.62  ->    HEADER
-L.83  ->    SECTION
-L.227 ->    FOOTER
-L.287 ->    MEDIA QUERIES
+L.35  ->    GENERALS
+L.73  ->    HEADER
+L.95  ->    SECTION
+L.238 ->    FOOTER
+L.299 ->    MEDIA QUERIES
 */
 
 /* ------------------------- */
@@ -26,7 +26,8 @@ menu2 ->            #c67412 (orange) // #a56799 (lilas) // #6e4ccc (violet)
 /* ------------------------- */
 
 /*
-font-family: 'Mimix'
+MainPage ->    'NexaLight' // 'NexaBold'
+Menu2    ->    'Mimix'
 */
 
 
@@ -57,6 +58,16 @@ a {
     src: url("../../Ressources/fonts/Mimix.ttf") format('TrueType');
 }
 
+@font-face {
+    font-family: 'NexaLight';
+    src: url("../../Ressources/fonts/NexaLight.otf") format('OpenType');
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url("../../Ressources/fonts/NexaBold.otf") format('OpenType');
+}
+
 
 /* ------------------------- */
 /*          HEADER           */
@@ -73,6 +84,7 @@ header {
 
 /* ---- titre h1 ---- */
 header h1 {
+    font-family: 'NexaBold', 'Trebuchet MS', 'sans-serif';
     color: #FDCB46;
     font-size: 2.4em;
     margin-top: 18px;
@@ -135,7 +147,6 @@ section {
     font-size: 1.8em;
     font-family: 'Mimix', 'Trebuchet MS', 'sans-serif';
     background: linear-gradient(to bottom right, #c67412, #a56799,  #6e4ccc);
-    width: 290px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 35px;
@@ -242,6 +253,7 @@ footer {
 
 /* ---- couleur + taille des liens du footer ---- */
 .footer__mentions, .footer__contact {
+    font-family: 'NexaLight', 'Trebuchet MS', 'sans-serif';
     color: #FDCB46;
     font-size: 1em;
 }
@@ -315,7 +327,6 @@ footer {
     /* ---- taille titre h3 haut de page ---- */
     .logo__hautdepage h3 {
         font-size: 3em;
-        width: 480px;
     }
 
     /* ---- taille titre h4 ---- */

@@ -3,11 +3,11 @@
 /* ------------------------- */
 
 /*
-L.25  ->    GENERALS
-L.48  ->    HEADER
-L.71  ->    SECTION
-L.106 ->    FOOTER
-L.158 ->    MEDIA QUERIES
+L.33  ->    GENERALS
+L.67  ->    HEADER
+L.91  ->    SECTION
+L.126 ->    FOOTER
+L.179 ->    MEDIA QUERIES
 */
 
 /* ------------------------- */
@@ -18,6 +18,14 @@ L.158 ->    MEDIA QUERIES
 vert  ->    #579C87 -rgb(87, 156, 135)-
 jaune ->    #FDCB46 -rgb(253, 203, 70)-
 blanc ->    #FFFFFF -rgb(255, 255, 255)-
+*/
+
+/* ------------------------- */
+/*          POLICE           */
+/* ------------------------- */
+
+/*
+MainPage ->    'NexaLight' // 'NexaBold'
 */
 
 
@@ -42,6 +50,17 @@ a {
     text-decoration: none;
 }
 
+/* ---- polices ---- */
+@font-face {
+    font-family: 'NexaLight';
+    src: url("../../Ressources/fonts/NexaLight.otf") format('OpenType');
+}
+
+@font-face {
+    font-family: 'NexaBold';
+    src: url("../../Ressources/fonts/NexaBold.otf") format('OpenType');
+}
+
 
 
 /* ------------------------- */
@@ -60,6 +79,7 @@ header {
 
 /* ---- titre h1 ---- */
 header h1 {
+    font-family: 'NexaBold', 'Trebuchet MS', 'sans-serif';
     color: #FDCB46;
     font-size: 2.4em;
     margin-top: 18px;
@@ -121,6 +141,7 @@ footer {
 
 /* ---- couleur + taille des liens du footer ---- */
 .footer__contact {
+    font-family: 'NexaLight', 'Trebuchet MS', 'sans-serif';
     color: #FDCB46;
     font-size: 1em;
     margin-top: 13.5px;
