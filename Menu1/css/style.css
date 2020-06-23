@@ -7,8 +7,8 @@ L.37   ->    GENERALS
 L.80   ->    HEADER
 L.102  ->    SECTION
 L.290  ->    FOOTER
-L.351  ->    MEDIA QUERIES (1200px)
-L.438  ->    MEDIA QUERIES (700px-1199px)
+L.352  ->    MEDIA QUERIES (1200px)
+L.439  ->    MEDIA QUERIES (700px-1199px)
 */
 
 /* ------------------------- */
@@ -322,10 +322,11 @@ footer {
 
 /* ---- effets sur mentions + contact ---- */
 .footer__mentions:hover, .footer__contact:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; 
-    transform: translate3d(0, 0, 0); 
-    backface-visibility: hidden; 
-    perspective: 1000px; 
+    animation-name: shake;
+    animation-duration: 0.82s;
+    animation-timing-function: cubic-bezier(.36,.07,.19,.97);
+    animation-fill-mode: both;
+    transform: translate3d(0, 0, 0);
 }
 
 @keyframes shake { 

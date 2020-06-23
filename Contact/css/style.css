@@ -7,7 +7,7 @@ L.34  ->    GENERALS
 L.67  ->    HEADER
 L.91  ->    SECTION
 L.122 ->    FOOTER
-L.175 ->    MEDIA QUERIES 
+L.176 ->    MEDIA QUERIES (1200px)
 */
 
 /* ------------------------- */
@@ -146,10 +146,11 @@ footer {
 
 /* ---- effets sur mentions ---- */
 .footer__mentions:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; 
-    transform: translate3d(0, 0, 0); 
-    backface-visibility: hidden; 
-    perspective: 1000px; 
+    animation-name: shake;
+    animation-duration: 0.82s;
+    animation-timing-function: cubic-bezier(.36,.07,.19,.97);
+    animation-fill-mode: both;
+    transform: translate3d(0, 0, 0);
 }
 
 @keyframes shake { 
