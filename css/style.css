@@ -6,9 +6,9 @@
 L.43  ->    GENERALS
 L.106 ->    HEADER
 L.130 ->    ARTICLES
-L.363 ->    FOOTER
-L.423 ->    MEDIA QUERIES (1200px)
-L.544 ->    MEDIA QUERIES (700px-1199px)
+L.365 ->    FOOTER
+L.425 ->    MEDIA QUERIES (1200px)
+L.525 ->    MEDIA QUERIES (700px-1199px)
 */
 
 /* ------------------------- */
@@ -157,12 +157,14 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     transform: scale(1);
-    transition-property: transform;
+    opacity: 1;
+    transition-property: transform, opacity;
     transition-duration: 1s;
 }
 
 .article__menu1--texte:hover, .article__menu2--texte:hover, .article__menu3--texte:hover, .article__menu4--texte:hover {
     transform: scale(1.10);
+    opacity: 0.6;
 }
 
 /* ---- marges entres les menus ---- */
