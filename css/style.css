@@ -401,8 +401,6 @@ footer {
     animation-timing-function: cubic-bezier(.36,.07,.19,.97);
     animation-fill-mode: both;
     transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
 }
 
 @keyframes shake { 
