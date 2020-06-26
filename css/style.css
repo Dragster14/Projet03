@@ -6,9 +6,9 @@
 L.43  ->    GENERALS
 L.106 ->    HEADER
 L.130 ->    ARTICLES
-L.365 ->    FOOTER
-L.426 ->    MEDIA QUERIES (1200px)
-L.526 ->    MEDIA QUERIES (700px-1199px)
+L.380 ->    FOOTER
+L.441 ->    MEDIA QUERIES (1200px)
+L.541 ->    MEDIA QUERIES (700px-1199px)
 */
 
 /* ------------------------- */
@@ -21,9 +21,9 @@ jaune ->            #FDCB46 -rgb(253, 203, 70)-
 blanc ->            #FFFFFF -rgb(255, 255, 255)-
 icone musique ->    #ef475f (rosé) // #f6916a (orange pâle)
 menu1 ->            #FCDFDB -rgb(252, 223, 219)- (fond) // #3d1319 (police)
-menu2 ->            #c67412 (orange) // #a56799 (lilas) // #6e4ccc (violet)
-menu3 ->            #0228dd (bleu foncé) // #0670f3 (bleu clair) // #229df9 (bleu très clair)
-menu4 ->            #3e923a (vert foncé) // #72bf56 (vert moyen) // #beff7f (vert clair)
+menu2 ->            #fff5fe (fond) // #c67412 (orange) // #a56799 (lilas) // #6e4ccc (violet)
+menu3 ->            #edefef (fond) // #0228dd (bleu foncé) // #0670f3 (bleu clair) // #229df9 (bleu très clair)
+menu4 ->            #fdfffd (fond) // #3e923a (vert foncé) // #72bf56 (vert moyen) // #beff7f (vert clair)
 */
 
 /* ------------------------- */
@@ -148,6 +148,21 @@ header h1 {
 /* ---- fond du menu 1 ---- */
 .article__menu1 a {
     background-color: #FCDFDB;
+}
+
+/* ---- fond du menu 2 ---- */
+.article__menu2 a {
+    background-color: #fff5fe;
+}
+
+/* ---- fond du menu 3 ---- */
+.article__menu3 a {
+    background-color: #edefef;
+}
+
+/* ---- fond du menu 4 ---- */
+.article__menu4 a {
+    background-color: #fdfffd;
 }
 
 /* ---- animation des menus ---- */
