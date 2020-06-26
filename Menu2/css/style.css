@@ -16,10 +16,11 @@ L.370 ->    MEDIA QUERIES (700px-1199px)
 /* ------------------------- */
 
 /*
-vert  ->            #579C87 -rgb(87, 156, 135)-
-jaune ->            #FDCB46 -rgb(253, 203, 70)-
-blanc ->            #FFFFFF -rgb(255, 255, 255)-
-menu2 ->            #c67412 (orange) // #a56799 (lilas) // #6e4ccc (violet)
+vert  ->    #579C87 -rgb(87, 156, 135)-
+jaune ->    #FDCB46 -rgb(253, 203, 70)-
+blanc ->    #FFFFFF -rgb(255, 255, 255)-
+menu2 ->    #c67412 (orange) // #a56799 (lilas) // #6e4ccc (violet)
+fond  ->    #fff5fe
 */
 
 /* ------------------------- */
@@ -103,6 +104,11 @@ section {
     width: 80%;
     margin: auto;
     margin-bottom: 90px;
+}
+
+/* ---- fond de couleur du menu ---- */
+article {
+    background-color: #fff5fe;
 }
 
 /* ---- alignement logo haut de page + titre h4 ---- */
