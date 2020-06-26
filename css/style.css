@@ -6,9 +6,9 @@
 L.43  ->    GENERALS
 L.106 ->    HEADER
 L.130 ->    ARTICLES
-L.363 ->    FOOTER
-L.423 ->    MEDIA QUERIES (1200px)
-L.544 ->    MEDIA QUERIES (700px-1199px)
+L.365 ->    FOOTER
+L.426 ->    MEDIA QUERIES (1200px)
+L.526 ->    MEDIA QUERIES (700px-1199px)
 */
 
 /* ------------------------- */
@@ -157,12 +157,14 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     transform: scale(1);
-    transition-property: transform;
+    opacity: 1;
+    transition-property: transform, opacity;
     transition-duration: 1s;
 }
 
 .article__menu1--texte:hover, .article__menu2--texte:hover, .article__menu3--texte:hover, .article__menu4--texte:hover {
     transform: scale(1.10);
+    opacity: 0.6;
 }
 
 /* ---- marges entres les menus ---- */
@@ -337,7 +339,7 @@ header h1 {
     }
   }
 
-/* ---- animation point3 + marge ---- */
+/* ---- animation point3 ---- */
 .div__prochainement--point3 {
     animation-name: point3;
   }
@@ -394,10 +396,11 @@ footer {
 
 /* ---- effets sur mentions + contact ---- */
 .footer__mentions:hover, .footer__contact:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; 
-    transform: translate3d(0, 0, 0); 
-    backface-visibility: hidden; 
-    perspective: 1000px; 
+    animation-name: shake;
+    animation-duration: 0.82s;
+    animation-timing-function: cubic-bezier(.36,.07,.19,.97);
+    animation-fill-mode: both;
+    transform: translate3d(0, 0, 0);
 }
 
 @keyframes shake { 
