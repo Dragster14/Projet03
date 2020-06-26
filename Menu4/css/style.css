@@ -43,7 +43,7 @@ body {
 
 /* ---- marges max de la page ---- */
 .body__bg {
-    max-width: 1500px;
+    max-width: 2000px;
     margin: auto;
     overflow-wrap: anywhere;
 }
@@ -218,7 +218,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    max-width: 1500px;
+    max-width: 2000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
