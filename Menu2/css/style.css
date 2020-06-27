@@ -3,12 +3,13 @@
 /* ------------------------- */
 
 /*
-L.37  ->    GENERALS
-L.80  ->    HEADER
-L.102 ->    SECTION
-L.275 ->    FOOTER
-L.337 ->    MEDIA QUERIES (1200px)
-L.401 ->    MEDIA QUERIES (700px-1199px)
+L.38  ->    GENERALS
+L.81  ->    HEADER
+L.103 ->    SECTION
+L.276 ->    FOOTER
+L.338 ->    MEDIA QUERIES (1200px)
+L.402 ->    MEDIA QUERIES (700px-1199px)
+L.448  ->   MEDIA QUERIES (699px)
 */
 
 /* ------------------------- */
@@ -439,5 +440,19 @@ footer {
     /* ---- marge contact ---- */
     .footer__contact {
         margin-right: 40px;
+    }
+}
+
+
+/* ------------------------- */
+/*       MEDIA QUERIES       */
+/*           699px           */
+/* ------------------------- */
+
+@media all and (max-width: 699px) {
+
+    /* ---- retrait des séparateurs ---- */
+    .img__entrees--gauche, .img__entrees--droite, .img__plats--gauche, .img__plats--droite, .img__desserts--gauche, .img__desserts--droite {
+        display: none;
     }
 }
