@@ -5,10 +5,10 @@
 /*
 L.37  ->    GENERALS
 L.80  ->    HEADER
-L.102  ->    SECTION
-L.269 ->    FOOTER
-L.331 ->    MEDIA QUERIES (1200px)
-L.395 ->    MEDIA QUERIES (700px-1199px)
+L.102 ->    SECTION
+L.275 ->    FOOTER
+L.337 ->    MEDIA QUERIES (1200px)
+L.401 ->    MEDIA QUERIES (700px-1199px)
 */
 
 /* ------------------------- */
@@ -137,6 +137,7 @@ section h2 {
 
 /* ---- taille des séparateurs gauche et droite ---- */
 .img__entrees img, .img__plats img, .img__desserts img {
+    width: 310px;
     max-width: 100%;
     height: auto;
 }
@@ -236,6 +237,11 @@ h4 {
 /* ---- marge texte et prix ---- */
 .article__entrees, .article__plats, .article__desserts p {
     margin-bottom: 10px;
+}
+
+/* ---- marge bas desserts ---- */
+.article__desserts {
+    margin-bottom: 100px;
 }
 
 /* ---- soulignement des h4 entrées / plats / desserts ---- */

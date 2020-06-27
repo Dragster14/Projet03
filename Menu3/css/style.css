@@ -4,11 +4,11 @@
 
 /*
 L.37  ->    GENERALS
-L.80  ->    HEADER
-L.102 ->    SECTION
-L.225 ->    FOOTER
-L.287 ->    MEDIA QUERIES (1200px)
-L.356 ->    MEDIA QUERIES (700px-1199px)
+L.85  ->    HEADER
+L.107 ->    SECTION
+L.254 ->    FOOTER
+L.316 ->    MEDIA QUERIES (1200px)
+L.380 ->    MEDIA QUERIES (700px-1199px)
 */
 
 /* ------------------------- */
@@ -29,7 +29,7 @@ fond  ->    #edefef
 
 /*
 MainPage ->    'NexaLight' // 'NexaBold'
-Menu3    ->    'SegoePrint' // 'CatsyLight'
+Menu3    ->    'SegoePrint' // 'CatsyLight' // 'Nimbus'
 */
 
 
@@ -58,6 +58,11 @@ a {
 @font-face {
     font-family: 'SegoePrint';
     src: url("../../Ressources/fonts/SegoePrint.ttf") format('TrueType');
+}
+
+@font-face {
+    font-family: 'Nimbus';
+    src: url("../../Ressources/fonts/Nimbus.ttf") format('TrueType');
 }
 
 @font-face {
@@ -106,13 +111,21 @@ header h1 {
 section {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    margin: auto;
+    align-items: center;
     margin-bottom: 90px;
 }
 
-/* ---- fond de couleur du menu ---- */
-article {
+/* ---- taille + police titre h2 ---- */
+section h2 {
+    font-size: 1.4em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Nimbus', 'Trebuchet MS', 'sans-serif';
+}
+
+/* ---- taille + couleur de fond de la carte ---- */
+.section__bg {
+    width: 80%;
     background-color: #edefef;
 }
 
@@ -129,7 +142,6 @@ article {
 
 /* ---- taille des séparateurs gauche et droite ---- */
 .img__entrees img, .img__plats img, .img__desserts img {
-    width: 97px;
     max-width: 100%;
     height: auto;
 }
@@ -138,6 +150,16 @@ article {
 .img__entrees p, .img__plats p, .img__desserts p {
     display: flex;
     align-items: center;
+}
+
+/* ---- marge séparateur gauche ---- */
+.separateur__marge--gauche {
+    margin-left: 30px;
+}
+
+/* ---- marge séparateur droite ---- */
+.separateur__marge--droite {
+    margin-right: 30px;
 }
 
 /* ---- taille + alignement du texte et séparateurs ---- */
@@ -171,6 +193,8 @@ article {
 h4 {
     font-size: 0.9em;
     font-weight: normal;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 /* ---- police h4 + texte ---- */
@@ -203,6 +227,11 @@ h4, p {
 .article__entrees, .article__plats, .article__desserts {
     display: flex;
     margin-bottom: 10px;
+}
+
+/* ---- marge bas dernier dessert ---- */
+.margebas {
+    margin-bottom: 100px;
 }
 
 /* ---- soulignement des h4 entrées / plats / desserts ---- */
@@ -307,11 +336,6 @@ footer {
         font-size: 2.5em;
     }
 
-    /* ---- taille des séparateurs gauche et droite ---- */
-    .img__entrees img, .img__plats img, .img__desserts img {
-        width: 285px;
-    }
-
     /* ---- taille titre h3 haut de page ---- */
     .logo__hautdepage h3 {
         font-size: 5em;
@@ -358,11 +382,6 @@ footer {
 /* ------------------------- */
 
 @media all and (min-width: 700px) and (max-width: 1199px) {
-
-    /* ---- taille des séparateurs gauche et droite ---- */
-    .img__entrees img, .img__plats img, .img__desserts img {
-        width: 200px;
-    }
 
     /* ---- taille titre h4 ---- */
     h4 {
